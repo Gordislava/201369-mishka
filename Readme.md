@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Ярослава Пономарева](https://up.htmlacademy.ru/adaptive/15/user/201369).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Соломеин](https://htmlacademy.ru/profile/id164065).
 
 ---
 
