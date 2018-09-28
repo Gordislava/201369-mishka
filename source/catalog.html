@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="logo">
+        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="85" alt="Интернет-магазин Мишка">
+      </a>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__hamb" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item site-list__item"><a href="">Каталог товаров</a></li>
+            <li class="main-nav__item site-list__item"><a href="">Вязание на заказ</a></li>
+          </ul>
+          <div class="search main-nav__item">
+            <input class="search__input" type="search">
+          </div>
+          <div class="cart main-nav__item">
+            Корзина: пока пуста
+          </div>
+        </div>
+      </nav>
+    </header>
+<main class="page-main main-container">
+  <section class="catalog">
+    <div class="catalog__header">
+      <h1 class="catalog__main-title">Каталог товаров</h1>
+    </div>
+    <ul class="catalog__list">
+      <li class="catalog__item product-item">
+        <a class="product-item__link" href="#">
+          <img class="product-item__img" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+          <h3 class="product-item__title">Зайчик-попрогайчик</h3>
+        </a>
+        <p class="product-item__descr">Рост 30 см, вес 200 г</p>
+        <div class="product-item__wrapper--price">
+        <p class="product-item__price">1 200руб.</p>
+        <button class="product-item__button cart-button" type="button">Корзина</button>
+        </div>
+      </li>
+      <li class="catalog__item product-item">
+        <a class="product-item__link" href="#">
+          <img class="product-item__img" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+          <h3 class="product-item__title">Корзинка для белья</h3>
+        </a>
+        <p class="product-item__descr">Диаметр 15 см, высота 10 см</p>
+        <div class="product-item__wrapper--price">
+        <p class="product-item__price">690 руб.</p>
+        <button class="product-item__button cart-button" type="button">Корзина</button>
+        </div>
+      </li>
+      <li class="catalog__item product-item">
+        <a class="product-item__link" href="#">
+          <img class="product-item__img" src="http://placehold.it/260x195" alt="Зайчик-попрыгайчик">
+          <h3 class="product-item__title">Большая корзинка для игрушек</h3>
+        </a>
+        <p class="product-item__descr">Диаметр 30 см, высота 30 см</p>
+        <div class="product-item__wrapper--price">
+        <p class="product-item__price">1 500руб.</p>
+        <button class="product-item__button cart-button" type="button">Корзина</button>
+        </div>
+      </li>
+    </ul>
+    <ul class="demo__list">
+      <li class="demo__item">
+        <h3 class="demo__title">Процесс производства</h3>
+        <img src="http://placehold.it/260x150" alt="Производство корзинок">
+        <p class="demo__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <button class="button demo__button"type="button"></button>
+      </li>
+    </ul>
+  </section>
+  <footer class="page-footer">
+    <div class="page-footer__social social">
+      <ul class="social__list">
+        <li class="social__item"><a class="social__link social__link--insta" href="#">Instagram</a></li>
+        <li class="social__item"><a class="social__link social__link--facebook" href="#">Facebook</a></li>
+        <li class="social__item"><a class="social__link social__link--twitter" href="#">Twitter</a></li>
+      </ul>
+    </div>
+    <div class="page-footer__copyright copyright">
+      <b class="copyright__text">Разработано</b>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+    </div>
+  </footer>
+  <section class="modal">
+    <div class="modal__wrapper">
+      <h2 class="modal__title">Добавить в корзину</h2>
+      <p class="modal__descr">Выберите размер</p>
+      <ul class="modal__list">
+        <li class="modal__item">S</li>
+        <li class="modal__item">M</li>
+        <li class="modal__item">L</li>
+      </ul>
+      <button class="button modal__button" type="button"></button>
+    </div>
+  </section>
+</main>
