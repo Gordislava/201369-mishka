@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Мишка</title>
+  </head>
+  <body>
+    <header class="page-header">
+      <a class="logo page-header__logo" href="index.html">
+        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="85" alt="Интернет-магазин Мишка">
+      </a>
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <button class="main-nav__hamb" type="button">Открыть меню</button>
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item site-list__item"><a href="">Каталог товаров</a></li>
+            <li class="main-nav__item site-list__item"><a href="">Вязание на заказ</a></li>
+          </ul>
+          <div class="search main-nav__item">
+            <input class="search__input" type="search">
+          </div>
+          <div class="cart main-nav__item">
+            Корзина: пока пуста
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="page-main main-container">
+      <section class="main-form">
+        <div class="catalog__header main-form__header">
+          <h1 class="catalog__main-title main-form__main-title">Вязание на заказ</h1>
+          <p class="form-descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        </div>
+        <form class="form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__field">
+            <legend class=" visually-hidden form__legend">Тип</legend>
+            <h3 class="form__title">Тип</h3>
+            <ul class="form__list form-radio__list">
+              <li class="form__item form-radio__item">
+                <input class="visually-hidden form__input-radio" type="radio" name="product" value="for interior" id="interior">
+                <label for="interior">Аксессуар для интерьера</label>
+              <li class="form__item form-radio__item">
+                <input class="visually-hidden form__input-radio" type="radio" name="product" value="toy" id="toy">
+                <label for="toy">Детская игрушка</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__field">
+            <legend class="visually-hidden form__legend">Цвет</legend>
+            <h3 class="form__title">Цвет</h3>
+            <ul class="form__list form-checkbox__list">
+              <li class="form__item form-checkbox__item">
+                <input class="visually-hidden form__input-checkbox" type="checkbox" name="white" id="white" checked>
+                <label for="white">Белый</label>
+              </li>
+              <li class="form__item form-checkbox__item">
+                <input class="visually-hidden form__input-checkbox" type="checkbox" name="gray" id="gray">
+                <label for="gray">Серый</label>
+              </li>
+              <li class="form__item form-checkbox__item">
+                <input class="visually-hidden form__input-checkbox" type="checkbox" name="tiffany" id="tiffany" checked>
+                <label for="tiffany">"Тиффани"</label>
+              </li>
+              <li class="form__item form-checkbox__item">
+                <input class="visually-hidden form__input-checkbox" type="checkbox" name="black" id="black">
+                <label for="black">Черный</label>
+              </li>
+              <li class="form__item form-checkbox__item">
+                <input class="visually-hidden form__input-checkbox" type="checkbox" name="pink" id="pink">
+                <label for="pink">Розовый</label>
+              </li>
+              <li class="form__item form-checkbox__item">
+                <input class="visually-hidden form__input-checkbox" type="checkbox" name="orange" id="orange">
+                <label for="orange">Оранжевый</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form__field">
+            <legend class="visually-hidden form__legend">ФИО</legend>
+            <h3 class="form__title">ФИО</h3>
+            <p class="form__item">
+              <label for="name">Имя:</label>
+              <input id="name" class="form__name-input must-fill" type="text" name="name" placeholder="Введите ваше имя*">
+            </p>
+            <p class="form__item">
+              <label for="surname">Фамилия:</label>
+              <input id="surname" class="form__name-input must-fill" type="text" name="name" placeholder="Укажите фамилию*">
+            </p>
+            <p class="form__item">
+              <label for="fathername">Отчество:</label>
+              <input id="fathername" class="form__name-input" type="text" name="name" placeholder="Отчество, если желаете">
+            </p>
+          </fieldset>
+          <fieldset class="form__field">
+            <legend class="visually-hidden form__legend">Тел</legend>
+            <h3 class="form__title"><label for="phone">Тел</label></h3>
+            <input id="phone" class="form__name-input form__name-input--phone must-fill" type="tel" name="phone" placeholder="+7 XXX XXX XX XX*">
+          </fieldset>
+          <fieldset class="form__field">
+            <legend class="visually-hidden form__legend">e-mail</legend>
+            <h3 class="form__title"><label for="email">e-mail</label></h3>
+                <input id="email" class="form__name-input form__name-input--email must-fill" type="text" name="email" placeholder="Ваш Email*">
+          </fieldset>
+          <fieldset class="form__field">
+            <legend class="visually-hidden form__legend">Доп</legend>
+            <h3 class="form__title"><label for="comment">Доп</label></h3>
+            <textarea class="form__comment"id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+          </fieldset>
+          <p class="form__note">*Поля обязательны для заполнения</p>
+          <button class="button form__button" type="submit">Отправить заказ</button>
+        </form>
+      </section>
+    </main>
