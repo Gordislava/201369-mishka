@@ -1,0 +1,11 @@
+.button {
+  @include bold-text;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  width: 259px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: solid 2px $text-color;
+  background-color: #ffffff;
+}

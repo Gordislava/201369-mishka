@@ -1,0 +1,23 @@
+.page-footer {
+  width: 320px;
+  margin-top: 40px;
+  background-color: $dark-background;
+}
+
+.social__list {
+  @include list-norm;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.page-footer__copyright {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.copyright__text {
+  @include bold-text;
+  font-size: 19px;
+  color: #000000;
+  padding-right: 30px;
+}

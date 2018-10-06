@@ -1,0 +1,37 @@
+.reviews__item {
+  padding: 0px;
+  margin: 0px;
+}
+
+.reviews__text {
+  @include basic-text;
+  line-height: 30px;
+}
+
+.review__autor {
+  @include bold-text;
+  font-size: 17px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.review__contacts {
+  @include basic-text;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.reviews__button-wrapper {
+  margin-bottom: 38px;
+}
+
+.reviews__write {
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000000;
+  width: 260px;
+  text-align: center;
+  vertical-align: middle;
+  margin-bottom: 45px;
+}

@@ -1,0 +1,37 @@
+.catalog__title {
+  @include bold-text;
+  font-size: 27px;
+  line-height: 30px;
+  color: #010000;
+  text-align: center;
+}
+
+.catalog__list {
+  @include list-norm;
+}
+
+.catalog__item {
+  width: 320px;
+  // padding-top: 30px;
+  // padding-bottom: 30px;
+}
+
+.catalog__item--interior {
+  background-color: #63d1bb;
+}
+
+.catalog__item--toys {
+  background-color: #56c3b2;
+}
+
+.catalog__link {
+  @include bold-text;
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 19px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}

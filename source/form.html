@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="page-header">
@@ -13,15 +14,22 @@
         <div class="main-nav__wrapper">
           <button class="main-nav__hamb" type="button">Открыть меню</button>
           <ul class="main-nav__list site-list">
-            <li class="main-nav__item site-list__item"><a href="">Каталог товаров</a></li>
-            <li class="main-nav__item site-list__item"><a href="">Вязание на заказ</a></li>
+            <li class="main-nav__item site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="main-nav__item site-list__item">
+              <a class="site-list__link">Вязание на заказ</a>
+            </li>
           </ul>
-          <div class="search main-nav__item">
-            <input class="search__input" type="search">
-          </div>
-          <div class="cart main-nav__item">
-            Корзина: пока пуста
-          </div>
+          <div class="user-nav">
+            <ul class="user-nav__list">
+              <li class="user-nav__item search">
+                <input class="search__input" type="search" placeholder="Поиск по сайту">
+              </li>
+              <li class="user-nav__item cart">
+                <a class="cart__link" href="#">Корзина: пока пуста</a>
+              </li>
+            </ul>
         </div>
       </nav>
     </header>
@@ -101,13 +109,34 @@
             <h3 class="form__title"><label for="email">e-mail</label></h3>
                 <input id="email" class="form__name-input form__name-input--email must-fill" type="text" name="email" placeholder="Ваш Email*">
           </fieldset>
-          <fieldset class="form__field">
+          <fieldset class="form__field form__field--comment">
             <legend class="visually-hidden form__legend">Доп</legend>
             <h3 class="form__title"><label for="comment">Доп</label></h3>
-            <textarea class="form__comment"id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="form__comment" id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </fieldset>
           <p class="form__note">*Поля обязательны для заполнения</p>
           <button class="button form__button" type="submit">Отправить заказ</button>
         </form>
       </section>
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__social social">
+        <ul class="social__list">
+          <li class="social__item">
+            <a class="social__link social__link--insta" href="#">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">Facebook</a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">Twitter</a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-footer__copyright copyright">
+        <b class="copyright__text">Разработано</b>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </div>
+    </footer>
+  </body>
+</html>
