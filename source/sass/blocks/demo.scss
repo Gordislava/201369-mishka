@@ -12,7 +12,7 @@
 }
 
 .demo__text {
-  @include basic-text--small
+  @include basic-text--small;
   width: 183px;
   margin-bottom: 29px;
 }
