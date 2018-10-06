@@ -42,6 +42,12 @@
     font-size: 17px;
     opacity: 0.3;
   }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom-color: #62d1ba;
+  }
 }
 
 .form__field--comment {
@@ -71,6 +77,12 @@
     font-size: 17px;
     opacity: 0.3;
     padding-right: 50px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: #62d1ba;
   }
 }
 
