@@ -1,0 +1,41 @@
+@mixin bold-text {
+  font: {
+    family: "OpenSans", "Arial", sans-serif;
+    weight: 700;
+  }
+}
+
+@mixin basic-text {
+  font: {
+    family: "OpenSans", "Arial", sans-serif;
+    weight: 400;
+    size: 15px;
+  }
+  color: #444444;
+}
+
+@mixin basic-text--small {
+  font: {
+    family: "OpenSans", "Arial", sans-serif;
+    weight: 400;
+    size: 13px;
+  }
+  color: #444444;
+  line-height: 24px;
+}
+
+@mixin list-norm {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+@mixin small-title {
+  font: {
+    family: "OpenSans", "Arial", sans-serif;
+    weight: 700;
+    size: 25px;
+  }
+  line-height: 30px;
+  color: #000000;
+}

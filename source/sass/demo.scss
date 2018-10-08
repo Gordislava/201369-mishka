@@ -1,0 +1,23 @@
+.demo__list {
+  @include list-norm;
+  border: 1px solid #ececec;
+  margin-bottom: 58px;
+  width: 260px;
+}
+
+.demo__title {
+  @include bold-text;
+  padding-top: 26px;
+  padding-bottom: 29px;
+}
+
+.demo__text {
+  @include basic-text--small;
+  width: 183px;
+  margin-bottom: 29px;
+}
+
+.demo__button {
+  width: 192px;
+  margin-bottom: 33px;
+}

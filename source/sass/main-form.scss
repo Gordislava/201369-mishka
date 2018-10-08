@@ -1,0 +1,12 @@
+.main-form__main-title {
+  @include bold-text;
+  font-size: 27px;
+  line-height: 30px;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: $dark-background;
+}
+
+.form-descr {
+  @include basic-text--small;
+}

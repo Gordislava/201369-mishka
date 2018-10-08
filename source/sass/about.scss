@@ -1,0 +1,17 @@
+.about__title {
+  @include small-title;
+}
+
+.about__list {
+  @include list-norm;
+  width: 200px;
+}
+
+.about__item {
+  @include bold-text;
+  font-size: 17px;
+  line-height: 20px;
+  color: #000000;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}

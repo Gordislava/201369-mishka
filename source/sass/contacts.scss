@@ -1,0 +1,46 @@
+.contacts__title {
+  @include bold-text;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.contacts__list {
+  @include basic-text;
+  line-height: 30px;
+  margin-bottom: 42px;
+}
+
+.contacts__field {
+  padding-right: 40px;
+}
+
+.contacts__value {
+  width: 170px;
+}
+
+.contacts__value--email {
+  border-bottom: 1px solid #56c3b2;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: $text-color;
+
+  &:hover {
+    color: #46c1ae;
+  }
+
+  &:active {
+    color: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+.contacts__map {
+  margin-bottom: 39px;
+}

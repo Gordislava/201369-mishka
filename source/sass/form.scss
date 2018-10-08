@@ -1,0 +1,97 @@
+.form__field {
+  border: none;
+  padding-left: 0;
+}
+
+.form__title {
+  @include bold-text;
+  color: $additional-light;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.form__list {
+  @include list-norm;
+}
+
+.form__item {
+  @include bold-text;
+  font-size: 17px;
+  line-height: 18px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  margin-bottom: 22px;
+}
+
+.form__name-input {
+  width: 260px;
+  padding-top: 17px;
+  padding-bottom: 18px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: #444444;
+  font-size: 17px;
+  outline: none;
+
+  &::placeholder {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 400;
+    color: #444444;
+    font-size: 17px;
+    opacity: 0.3;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-bottom-color: #62d1ba;
+  }
+}
+
+.form__field--comment {
+  padding: 0;
+  margin-bottom: 18px;
+}
+
+.form__comment {
+  border: 2px solid #000000;
+  width: 260px;
+  box-sizing: border-box;
+  resize: vertical;
+  min-height: 142px;
+  padding-top: 18px;
+  padding-left: 17px;
+  padding-right: 17px;
+  font-family: "OpenSans", "Arial", sans-serif;
+  font-weight: 400;
+  color: #444444;
+  font-size: 17px;
+  outline: none;
+
+  &::placeholder {
+    font-family: "OpenSans", "Arial", sans-serif;
+    font-weight: 400;
+    color: #444444;
+    font-size: 17px;
+    opacity: 0.3;
+    padding-right: 50px;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    border-color: #62d1ba;
+  }
+}
+
+.form__note {
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.form__button {
+  margin-bottom: 15px;
+}
