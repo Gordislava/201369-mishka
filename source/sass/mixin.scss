@@ -11,7 +11,7 @@
     weight: 400;
     size: 15px;
   }
-  color: #444444;
+  color: $text-color;
 }
 
 @mixin basic-text--small {
@@ -20,7 +20,7 @@
     weight: 400;
     size: 13px;
   }
-  color: #444444;
+  color: $text-color;
   line-height: 24px;
 }
 
@@ -37,5 +37,12 @@
     size: 25px;
   }
   line-height: 30px;
-  color: #000000;
+  color: $text-dark;
+}
+
+@mixin wrapper {
+  width: 260px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
 }

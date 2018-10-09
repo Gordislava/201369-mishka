@@ -1,6 +1,6 @@
 .demo__list {
   @include list-norm;
-  border: 1px solid #ececec;
+  border: 1px solid $border-color;
   margin-bottom: 58px;
   width: 260px;
 }

@@ -1,3 +1,17 @@
+.reviews {
+  width: 100%;
+}
+
+.reviews__wrapper {
+  @include wrapper;
+}
+
+.reviews__title {
+  @include small-title;
+  margin: 0;
+  padding-bottom: 15px;
+}
+
 .reviews__item {
   padding: 0;
   margin: 0;
@@ -12,7 +26,7 @@
   @include bold-text;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: $text-dark;
 }
 
 .review__contacts {
@@ -23,13 +37,14 @@
 
 .reviews__button-wrapper {
   margin-bottom: 38px;
+  display: flex;
 }
 
 .reviews__write {
   display: inline-block;
   box-sizing: border-box;
   text-decoration: none;
-  color: #000000;
+  color: $text-dark;
   width: 260px;
   text-align: center;
   vertical-align: middle;

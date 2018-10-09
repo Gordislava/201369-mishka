@@ -1,5 +1,5 @@
 .product-item {
-  border: 1px solid #ececec;
+  border: 1px solid $border-color;
   margin-bottom: 30px;
   width: 260px;
 }
@@ -7,7 +7,7 @@
 .product-item__link {
   @include bold-text;
   text-decoration: none;
-  color: #000000;
+  color: $text-dark;
 }
 
 .product-item__title {

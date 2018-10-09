@@ -3,11 +3,11 @@
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
-  width: 259px;
+  width: 260px;
   padding-top: 10px;
   padding-bottom: 10px;
   border: solid 2px $text-color;
-  background-color: #ffffff;
+  background-color: $bgr-color;
 
   &:hover {
     color: #ffffff;

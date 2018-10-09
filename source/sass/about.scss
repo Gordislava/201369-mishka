@@ -1,17 +1,29 @@
+.about {
+  width: 100%;
+}
+
+.about__wrapper {
+  @include wrapper;
+}
+
 .about__title {
   @include small-title;
+  margin: 0;
+  padding-top: 34px;
 }
 
 .about__list {
   @include list-norm;
-  width: 200px;
+  margin-bottom: 30px;
+
 }
 
 .about__item {
   @include bold-text;
   font-size: 17px;
   line-height: 20px;
-  color: #000000;
+  color: $text-dark;
   padding-top: 80px;
   padding-bottom: 30px;
+  width: 240px;
 }

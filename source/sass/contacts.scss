@@ -1,8 +1,18 @@
+.contacts {
+  width: 100%;
+}
+
+.contacts__wrapper {
+  @include wrapper;
+}
+
 .contacts__title {
   @include bold-text;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: $text-dark;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .contacts__list {
@@ -16,11 +26,11 @@
 }
 
 .contacts__value {
-  width: 170px;
+  max-width: 170px;
 }
 
 .contacts__value--email {
-  border-bottom: 1px solid #56c3b2;
+  border-bottom: 1px solid $accent-dark;
 
   &:active {
     opacity: 0.3;
@@ -42,5 +52,13 @@
 }
 
 .contacts__map {
+  width: 320px;
+  margin: 0 auto;
   margin-bottom: 39px;
+}
+
+.contacts__button {
+  display: block;
+  width: 260px;
+  margin: 0 auto;
 }
