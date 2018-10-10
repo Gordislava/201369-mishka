@@ -7,6 +7,8 @@
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .promo__title {
@@ -35,6 +37,20 @@
   width: 100%;
 }
 
+.promo__photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.promo__price-wrapper {
+  order: 2;
+}
+
+.promo__img {
+  order: 1;
+}
+
 .promo__field,
 .promo__value {
   padding-top: 8px;
@@ -52,4 +68,67 @@
 
 .promo__button {
   margin-bottom: 36px;
+}
+
+@media (min-width: $tablet) {
+  .promo__title-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 55px;
+  }
+
+  .promo__wrapper {
+    min-width: 772px;
+    padding-left: 52px;
+    padding-right: 53px;
+    margin: 0 auto;
+  }
+
+  .promo__title {
+    @include tablet-title;
+    padding-top: 60px;
+    margin-right: 150px;
+  }
+
+  .promo__price-wrapper {
+    order: 0;
+    width: 290px;
+  }
+
+  .promo__price {
+    font-size: 20px;
+  }
+
+  .promo__popular {
+    margin-top: 75px;
+    width: 70px;
+    text-align: center;
+  }
+
+  .promo__list {
+    width: 290px;
+  }
+
+  .promo__descr {
+    width: 290px;
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 0;
+  }
+
+  .promo__img {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .promo__button {
+    margin-bottom: 53px;
+  }
+}
+
+@media (min-width: $desctop) {
+  .promo__title {
+    @include desctop-title;
+  }
 }

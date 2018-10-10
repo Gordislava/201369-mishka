@@ -14,6 +14,7 @@
   color: $text-color;
 }
 
+
 @mixin basic-text--small {
   font: {
     family: "OpenSans", "Arial", sans-serif;
@@ -37,6 +38,26 @@
     size: 25px;
   }
   line-height: 30px;
+  color: $text-dark;
+}
+
+@mixin tablet-title {
+  font: {
+    family: "OpenSans", "Arial", sans-serif;
+    weight: 700;
+    size: 43px;
+  }
+  line-height: 50px;
+  color: $text-dark;
+}
+
+@mixin desctop-title {
+  font: {
+    family: "OpenSans", "Arial", sans-serif;
+    weight: 700;
+    size: 53px;
+  }
+  line-height: 57px;
   color: $text-dark;
 }
 

@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sass/normalize.scss">
   </head>
   <body>
     <header class="page-header">
@@ -50,26 +52,32 @@
       </section>
       <section class="promo">
         <div class="promo__wrapper">
-          <h2 class="promo__title">Вязаные корзинки</h2>
-          <p class="promo__popular">Товар недели</p>
-          <p class="promo__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-          <table class="promo__list">
-            <tr>
-              <td class="promo__field">Цвет:</td>
-              <td class="promo__value">"Тиффани"/серый</td>
-            </tr>
-            <tr>
-              <td class="promo__field">Диаметр:</td>
-              <td class="promo__value">25 см</td>
-            </tr>
-            <tr>
-              <td class="promo__field">Высота:</td>
-              <td class="promo__value">15 см</td>
-            </tr>
-          </table>
-          <img class="promo__img" src="http://placehold.it/260x315" width="260" height="315" alt="Вязанные корзинки">
-          <p class="promo__price">Цена: 990 руб.</p>
-          <button class="button promo__button" type="button">Заказать</button>
+          <div class="promo__title-group">
+            <h2 class="promo__title">Вязаные корзинки</h2>
+            <p class="promo__popular">Товар недели</p>
+          </div>
+          <div class="promo__photo-wrapper">
+            <p class="promo__descr">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+            <table class="promo__list">
+              <tr>
+                <td class="promo__field">Цвет:</td>
+                <td class="promo__value">"Тиффани"/серый</td>
+              </tr>
+              <tr>
+                <td class="promo__field">Диаметр:</td>
+                <td class="promo__value">25 см</td>
+              </tr>
+              <tr>
+                <td class="promo__field">Высота:</td>
+                <td class="promo__value">15 см</td>
+              </tr>
+            </table>
+            <div class="promo__price-wrapper">
+              <p class="promo__price">Цена: 990 руб.</p>
+              <button class="button promo__button" type="button">Заказать</button>
+            </div>
+            <img class="promo__img" src="http://placehold.it/260x315" width="260" height="315" alt="Вязанные корзинки">
+          </div>
         </div>
       </section>
       <section class="about">
