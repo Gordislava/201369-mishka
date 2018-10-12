@@ -1,6 +1,30 @@
 .page-header {
   @include bold-text;
-  width: 100%;
   background-color: $bgr-color;
   color: $text-dark;
+}
+
+.page-header__container {
+  width: auto;
+  max-width: 767px;
+  margin: 0 auto;
+}
+
+.page-header__logo {
+  order: 1;
+  border-bottom: 1px solid $border-color;
+  text-align: center;
+}
+
+@media (min-width: $tablet) {
+  .page-header__container {
+    @include container--tablet;
+  }
+
+  .page-header__logo {
+    border-bottom: none;
+    border-right: 1px solid $border-color;
+    width: 45%;
+    padding-bottom: 0;
+  }
 }

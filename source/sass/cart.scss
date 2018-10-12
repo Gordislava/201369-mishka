@@ -19,3 +19,15 @@
     opacity: 0.3;
   }
 }
+
+@media (min-width: $tablet) {
+  .cart {
+    border-bottom: none;
+    padding-left: 80px;
+    padding-bottom: 20px;
+  }
+
+  .cart__link {
+    padding: 0;
+  }
+}

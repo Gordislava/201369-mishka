@@ -2,18 +2,19 @@
   width: 100%;
 }
 
-.promo__wrapper {
-  width: 260px;
+.promo__container {
+  width: auto;
+  max-width: 767px;
   padding-left: 30px;
   padding-right: 30px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 .promo__title {
   @include small-title;
-  padding-top: 34px;
   margin: 0;
   margin-bottom: 8px;
 }
@@ -37,10 +38,13 @@
   width: 100%;
 }
 
-.promo__photo-wrapper {
+.promo__wrapper {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  position: relative;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 .promo__price-wrapper {
@@ -73,12 +77,12 @@
 @media (min-width: $tablet) {
   .promo__title-group {
     display: flex;
-    align-items: center;
+    justify-content: space-between;
     margin-bottom: 55px;
   }
 
-  .promo__wrapper {
-    min-width: 772px;
+  .promo__container {
+    max-width: 1150px;
     padding-left: 52px;
     padding-right: 53px;
     margin: 0 auto;
@@ -86,13 +90,11 @@
 
   .promo__title {
     @include tablet-title;
-    padding-top: 60px;
-    margin-right: 150px;
   }
 
-  .promo__price-wrapper {
+  .promo__wrapper {
     order: 0;
-    width: 290px;
+    width: 38%;
   }
 
   .promo__price {
@@ -100,17 +102,12 @@
   }
 
   .promo__popular {
-    margin-top: 75px;
+    margin-top: 10px;
     width: 70px;
     text-align: center;
   }
 
-  .promo__list {
-    width: 290px;
-  }
-
   .promo__descr {
-    width: 290px;
     font-size: 17px;
     line-height: 30px;
     margin-top: 0;
@@ -118,8 +115,8 @@
 
   .promo__img {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 53px;
+    top: 125px;
   }
 
   .promo__button {
@@ -127,8 +124,34 @@
   }
 }
 
-@media (min-width: $desctop) {
+@media (min-width: $desktop) {
+  .promo__container {
+    @include container--desktop;
+  }
+
+  .promo__title-group {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
   .promo__title {
-    @include desctop-title;
+    font-size: 53px;
+    line-height: 57px;
+    order: 2;
+  }
+
+  .promo__popular {
+    margin: 0;
+    margin-left: 50px;
+    margin-right: 58px;
+  }
+
+  .promo__wrapper {
+    width: 26%;
+    margin-left: 178px;
+  }
+
+  .promo__button {
+    margin-bottom: 70px;
   }
 }

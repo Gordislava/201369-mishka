@@ -51,19 +51,26 @@
   color: $text-dark;
 }
 
-@mixin desctop-title {
-  font: {
-    family: "OpenSans", "Arial", sans-serif;
-    weight: 700;
-    size: 53px;
-  }
-  line-height: 57px;
-  color: $text-dark;
-}
-
-@mixin wrapper {
-  width: 260px;
+@mixin container {
+  width: auto;
+  max-width: 767px;
+  margin: 0 auto;
   padding-left: 30px;
   padding-right: 30px;
+}
+
+@mixin container--tablet {
+  width: auto;
+  max-width: 1149px;
+  padding-left: 52px;
+  padding-right: 53px;
+  margin: 0 auto;
+}
+
+@mixin container--desktop {
+  width: auto;
+  max-width: 1440px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin: 0 auto;
 }

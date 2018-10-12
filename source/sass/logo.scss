@@ -4,7 +4,11 @@
   padding-bottom: 22px;
 }
 
-.page-header__logo {
-  border-bottom: 1px solid $border-color;
-  text-align: center;
+@media (min-width: $tablet) {
+  .logo {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 20px;
+    padding-top: 22px;
+  }
 }
