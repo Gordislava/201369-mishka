@@ -1,15 +1,26 @@
-.page-catalog__header {
-  background-color: $bgr-dark;
-}
-
-.page-catalog__main-title {
-  @include bold-text;
-  font-size: 27px;
-  line-height: 30px;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-
 .page-catalog__list {
   @include list-norm;
+}
+
+.page-catalog {
+  @include container;
+}
+
+@media (min-width: $tablet) {
+  .page-catalog {
+    @include container--tablet;
+  }
+}
+
+@media (min-width: $desktop) {
+  .page-catalog {
+    @include container--desktop;
+  }
+
+  .page-catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 57px;
+  }
 }

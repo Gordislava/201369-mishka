@@ -16,8 +16,10 @@
     display: flex;
     align-items: flex-start;
   }
+}
 
-  .user-nav__list {
-    align-items: flex-start;
+@media (min-width: $desktop) {
+  .user-nav {
+    order: 3;
   }
 }

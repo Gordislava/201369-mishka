@@ -2,22 +2,88 @@
   @include list-norm;
   border: 1px solid $border-color;
   margin-bottom: 58px;
-  width: 260px;
+  width: 100%;
+}
+
+.demo__item {
+  display: flex;
+  flex-direction: column;
 }
 
 .demo__title {
   @include bold-text;
   padding-top: 26px;
   padding-bottom: 29px;
+  padding-left: 91px;
+  margin: 0;
 }
 
 .demo__text {
   @include basic-text--small;
-  width: 183px;
+  width: 67%;
   margin-bottom: 29px;
+  margin-left: 34px;
 }
 
 .demo__button {
-  width: 192px;
+  width: 75%;
+  margin: 0 auto;
   margin-bottom: 33px;
+  align-items: center;
+}
+
+@media (min-width: $tablet) {
+  .demo__title {
+    order: 2;
+    font-size: 20px;
+  }
+
+  .demo__text {
+    order: 3;
+    width: 85%;
+    font-size: 15px;
+    margin-left: 40px;
+  }
+
+  .demo__button {
+    order: 4;
+    width: 85%;
+    margin-left: 40px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .demo__item {
+    flex-direction: column;
+    position: relative;
+  }
+
+  .demo__img {
+    position: absolute;
+    width: 64%;
+    height: 100%;
+  }
+
+  .demo__title {
+    width: 14%;
+    padding-left: 0;
+    padding-top: 100px;
+    padding-bottom: 42px;
+    align-self: flex-end;
+    margin-right: 135px;
+  }
+
+  .demo__text {
+    margin-top: 0;
+    margin-left: 0;
+    width: 21%;
+    align-self: flex-end;
+    margin-right: 60px;
+  }
+
+  .demo__button {
+    align-self: flex-end;
+    margin-right: 70px;
+    width: 20%;
+  }
 }

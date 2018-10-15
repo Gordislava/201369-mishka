@@ -28,3 +28,14 @@
     padding-bottom: 0;
   }
 }
+
+@media (min-width: $desktop) {
+  .page-header__container {
+    @include container--desktop;
+  }
+
+  .page-header__logo {
+    order: 2;
+    width: 24%;
+  }
+}

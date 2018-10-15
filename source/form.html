@@ -1,26 +1,20 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <header class="page-header">
-      <a class="logo page-header__logo" href="index.html">
-        <img class="logo__image" src="http://placehold.it/86x35" width="86" height="85" alt="Интернет-магазин Мишка">
-      </a>
-      <nav class="main-nav">
-        <div class="main-nav__wrapper">
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Мишка</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="sass/normalize.scss">
+</head>
+<body>
+  <header class="page-header page-header__container">
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+          <a class="logo page-header__logo" href="index.html">
+            <img class="logo__image" src="http://placehold.it/86x35" width="86" height="35" alt="Интернет-магазин Мишка">
+          </a>
           <button class="main-nav__hamb" type="button">Открыть меню</button>
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__item site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
-            </li>
-            <li class="main-nav__item site-list__item">
-              <a class="site-list__link">Вязание на заказ</a>
-            </li>
-          </ul>
           <div class="user-nav">
             <ul class="user-nav__list">
               <li class="user-nav__item search">
@@ -30,15 +24,33 @@
                 <a class="cart__link" href="#">Корзина: пока пуста</a>
               </li>
             </ul>
-        </div>
-      </nav>
-    </header>
+          </div>
+          <ul class="site-list">
+            <li class="site-list__item">
+              <a class="site-list__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__link">Вязание на заказ</a>
+            </li>
+          </ul>
+          <ul class="assortment-list">
+            <li class="assortment-list__item">
+              <a class="assortment-list__link" href="#">Новые поступления</a>
+            </li>
+            <li class="assortment-list__item">
+              <a class="assortment-list__link" href="#">Распродажа</a>
+            </li>
+          </ul>
+          <p class="main-nav__note">Бесплатная доставка по России</p>
+      </div>
+    </nav>
+  </header>
     <main class="page-main main-container">
-      <section class="main-form">
-        <div class="catalog__header main-form__header">
-          <h1 class="catalog__main-title main-form__main-title">Вязание на заказ</h1>
-          <p class="form-descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        </div>
+      <div class="page-main__header">
+        <h1 class="page-main__main-title">Вязание на заказ</h1>
+      </div>
+      <section class="main-form main-form__container">
+          <p class="main-form__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
         <form class="form" action="https://echo.htmlacademy.ru" method="post">
           <fieldset class="form__field">
             <legend class=" visually-hidden form__legend">Тип</legend>

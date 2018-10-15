@@ -41,6 +41,30 @@
     line-height: 24px;
     padding: 25px 0 0 0;
   }
+}
 
+@media (min-width: $desktop) {
+  .site-list {
+    order: 1;
+    justify-content: flex-start;
+  }
 
+  .site-list__link {
+    font-size: 17px;
+    padding-top: 0;
+  }
+
+  .site-list__item {
+    padding-right: 35px;
+    padding-top: 32px;
+    padding-bottom: 20px;
+  }
+
+  .site-list__item:first-child {
+    border-right: 1px solid $border-color;
+  }
+
+  .site-list__item:last-child {
+    padding-left: 32px;
+  }
 }
