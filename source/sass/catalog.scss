@@ -74,6 +74,11 @@
     width: 50%;
   }
 
+  .catalog__item--interior:hover {
+    position: absolute;
+    border-top: 5px solid $accent-light;
+  }
+
   .catalog__link {
     font-size: 20px;
     line-height: 30px;
