@@ -89,6 +89,8 @@
     flex-direction: column;
     width: 30%;
     margin-bottom: 0;
+    justify-content: space-between;
+    min-height: 659px;
   }
 
   .product-item__link,
@@ -97,6 +99,17 @@
   }
 
   .product-item__descr {
-    margin-bottom: 73px;
+    margin-bottom: 0;
+  }
+
+  .product-item__text {
+    display: flex;
+    flex-direction: column;
+    min-height: 197px;
+    margin-top: auto;
+  }
+
+  .product-item__price-group {
+    margin-top: auto;
   }
 }
