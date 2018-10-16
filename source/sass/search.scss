@@ -2,18 +2,37 @@
   padding-top: 32px;
   padding-bottom: 30px;
   border: 0;
+  border-bottom: 1px solid $border-color;
 }
 
 .search__input {
   border: 0;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: $text-dark;
+  padding-left: 76px;
 }
 
 .search__input::placeholder {
   @include bold-text;
   font-size: 17px;
   line-height: 24px;
-  color: #000000;
+  color: $text-dark;
+}
+
+@media (min-width: $tablet) {
+  .search {
+    width: 82px;
+    border-bottom: none;
+    border-right: 1px solid $border-color;
+    padding-bottom: 20px;
+  }
+
+  .search__input {
+    width: 82px;
+  }
+
+  .search__input::placeholder {
+    font-size: 0;
+  }
 }

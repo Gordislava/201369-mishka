@@ -1,33 +1,34 @@
+.contacts {
+  width: 100%;
+}
+
+.contacts__container {
+  @include container;
+}
+
 .contacts__title {
   @include bold-text;
   font-size: 18px;
   line-height: 30px;
-  color: #000000;
+  color: $text-dark;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .contacts__list {
   @include basic-text;
   line-height: 30px;
   margin-bottom: 42px;
+  width: 100%;
 }
 
 .contacts__field {
-  padding-right: 40px;
-}
-
-.contacts__value {
-  width: 170px;
-}
-
-.contacts__value--email {
-  border-bottom: 1px solid #56c3b2;
-
-  &:active {
-    opacity: 0.3;
-  }
+  padding-right: 20px;
 }
 
 .contacts__link {
+  padding-bottom: 4px;
+  border-bottom: 1px solid $accent-dark;
   text-decoration: none;
   color: $text-color;
 
@@ -41,6 +42,94 @@
   }
 }
 
+.contacts__value--dir {
+  padding: 0;
+  margin: 0;
+}
+
 .contacts__map {
+  width: 100%;
   margin-bottom: 39px;
+  display: flex;
+  justify-content: center;
+}
+
+.contacts__button {
+  display: block;
+  max-width: 260px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet) {
+  .contacts__container {
+    @include container--tablet;
+  }
+
+  .contacts__title {
+    @include tablet-title;
+    padding-top: 70px;
+  }
+
+  .contacts__list > tbody {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contacts__row {
+    display: flex;
+    width: 45%;
+  }
+
+  .contacts__button {
+    width: 30%;
+  }
+}
+
+@media (min-width: $desktop) {
+  .contacts__container {
+    @include container--desktop;
+  }
+
+  .contacts__wrapper {
+    padding-left: 175px;
+  }
+
+  .contacts {
+    position: relative;
+  }
+
+  .contacts__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-top: 152px;
+  }
+
+  .contacts__list {
+    width: 65%;
+    margin-bottom: 84px;
+  }
+
+  .contacts__list > tbody {
+    display: block;
+  }
+
+  .contacts__map {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 45%;
+  }
+
+  .contacts__value--email {
+    padding-bottom: 25px;
+  }
+
+  .contacts__field {
+    vertical-align: top;
+  }
+
+  .contacts__button {
+    margin-left: 20%;
+    width: 230px;
+  }
 }

@@ -5,7 +5,7 @@
 
 .form__title {
   @include bold-text;
-  color: $additional-light;
+  color: $accent-light;
   font-size: 17px;
   text-transform: uppercase;
 }
@@ -28,7 +28,7 @@
   padding-top: 17px;
   padding-bottom: 18px;
   border: none;
-  border-bottom: 2px solid #000000;
+  border-bottom: 2px solid $text-dark;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
   color: #444444;
@@ -38,7 +38,7 @@
   &::placeholder {
     font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 400;
-    color: #444444;
+    color: $text-color;
     font-size: 17px;
     opacity: 0.3;
   }
@@ -46,7 +46,7 @@
   &:hover,
   &:active,
   &:focus {
-    border-bottom-color: #62d1ba;
+    border-bottom-color: $accent-light;
   }
 }
 
@@ -56,7 +56,7 @@
 }
 
 .form__comment {
-  border: 2px solid #000000;
+  border: 2px solid $text-dark;
   width: 260px;
   box-sizing: border-box;
   resize: vertical;
@@ -66,14 +66,13 @@
   padding-right: 17px;
   font-family: "OpenSans", "Arial", sans-serif;
   font-weight: 400;
-  color: #444444;
+  color: $text-color;
   font-size: 17px;
   outline: none;
 
   &::placeholder {
     font-family: "OpenSans", "Arial", sans-serif;
     font-weight: 400;
-    color: #444444;
     font-size: 17px;
     opacity: 0.3;
     padding-right: 50px;
@@ -82,7 +81,7 @@
   &:hover,
   &:active,
   &:focus {
-    border-color: #62d1ba;
+    border-color: $accent-light;
   }
 }
 
@@ -94,4 +93,35 @@
 
 .form__button {
   margin-bottom: 15px;
+}
+
+@media (min-width: $tablet) {
+  .form__title {
+    font-size: 17px;
+    width: 7.5%;
+    display: inline-block;
+  }
+
+  .form__item {
+    font-size: 19px;
+  }
+
+  .form__field {
+    display: flex;
+    flex-direction: row;
+    padding: 0 52px;
+    margin: 0;
+  }
+
+  .form__list {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form__field--color,
+  .form__field--phone,
+  .form__field--email {
+    background-color: $bgr-dark;
+  }
 }

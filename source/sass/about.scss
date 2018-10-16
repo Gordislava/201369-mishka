@@ -1,17 +1,92 @@
+.about {
+  width: 100%;
+}
+
+.about__container {
+  @include container;
+}
+
 .about__title {
   @include small-title;
+  margin: 0;
+  padding-top: 34px;
 }
 
 .about__list {
   @include list-norm;
-  width: 200px;
+  margin-bottom: 30px;
 }
 
 .about__item {
   @include bold-text;
   font-size: 17px;
   line-height: 20px;
-  color: #000000;
+  color: $text-dark;
   padding-top: 80px;
   padding-bottom: 30px;
+  width: 78%;
+}
+
+@media (min-width: $tablet) {
+  .about__container {
+    width: auto;
+    max-width: 1150px;
+    padding-left: 52px;
+    padding-right: 53px;
+  }
+
+  .about__title {
+    @include tablet-title;
+  }
+
+  .about__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 82px;
+  }
+
+  .about__item {
+    font-size: 20px;
+    line-height: 22px;
+    width: 43%;
+  }
+
+  .about__item--scandinavian {
+    order: 3;
+  }
+
+  .about__item--like {
+    order: 5;
+  }
+
+  .about__item--handmade {
+    order: 2;
+  }
+
+  .about__item--manufacturer {
+    order: 4;
+  }
+
+  .about__item--gift {
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop) {
+  .about__container {
+    @include container--desktop;
+  }
+
+  .about__title {
+    font-size: 53px;
+    line-height: 57px;
+    padding-left: 175px;
+  }
+
+  .about__list {
+    padding-left: 175px;
+    width: 63%;
+    margin-bottom: 90px;
+  }
 }

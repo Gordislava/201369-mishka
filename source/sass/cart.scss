@@ -1,13 +1,15 @@
 .cart {
   padding-top: 32px;
   padding-bottom: 30px;
+  border-bottom: 1px solid $border-color;
 }
 
 .cart__link {
-  color: #000000;
+  color: $text-dark;
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 30px;
+  padding-left: 76px;
 
   &:hover {
     opacity: 0.6;
@@ -15,5 +17,17 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (min-width: $tablet) {
+  .cart {
+    border-bottom: none;
+    padding-left: 80px;
+    padding-bottom: 20px;
+  }
+
+  .cart__link {
+    padding: 0;
   }
 }

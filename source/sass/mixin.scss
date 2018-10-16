@@ -11,8 +11,9 @@
     weight: 400;
     size: 15px;
   }
-  color: #444444;
+  color: $text-color;
 }
+
 
 @mixin basic-text--small {
   font: {
@@ -20,7 +21,7 @@
     weight: 400;
     size: 13px;
   }
-  color: #444444;
+  color: $text-color;
   line-height: 24px;
 }
 
@@ -37,5 +38,39 @@
     size: 25px;
   }
   line-height: 30px;
-  color: #000000;
+  color: $text-dark;
+}
+
+@mixin tablet-title {
+  font: {
+    family: "OpenSans", "Arial", sans-serif;
+    weight: 700;
+    size: 43px;
+  }
+  line-height: 50px;
+  color: $text-dark;
+}
+
+@mixin container {
+  width: auto;
+  max-width: 767px;
+  margin: 0 auto;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@mixin container--tablet {
+  width: auto;
+  max-width: 1149px;
+  padding-left: 52px;
+  padding-right: 53px;
+  margin: 0 auto;
+}
+
+@mixin container--desktop {
+  width: auto;
+  max-width: 1440px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
 }

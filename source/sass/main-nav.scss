@@ -1,6 +1,40 @@
 .main-nav {
   @include bold-text;
-  color: #000000;
+  color: $text-dark;
   line-height: 24px;
   font-size: 17px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main-nav__hamb {
+  display: none;
+}
+
+.main-nav__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-nav__note {
+  display: none;
+  font-weight: 400;
+}
+
+@media (min-width: $tablet) {
+  .main-nav__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .main-nav__note {
+    display: inline-block;
+    order: 5;
+    font-size: 15px;
+    padding-top: 25px;
+    margin: 0;
+  }
 }

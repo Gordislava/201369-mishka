@@ -1,37 +1,157 @@
+.promo {
+  width: 100%;
+}
+
+.promo__container {
+  width: auto;
+  max-width: 767px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
 .promo__title {
   @include small-title;
-  margin-top: 34px;
+  margin: 0;
   margin-bottom: 8px;
 }
 
 .promo__popular {
   @include bold-text;
-  color: #63d1bb;
+  color: $accent-light;
   text-transform: uppercase;
   padding-top: 0;
   margin-top: 0;
 }
 
 .promo__descr,
-.promo-list {
+.promo__list {
   @include basic-text;
 }
 
 .promo__list {
   border-collapse: collapse;
   margin-bottom: 28px;
+  width: 100%;
+}
+
+.promo__wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.promo__price-wrapper {
+  order: 2;
+}
+
+.promo__img {
+  order: 1;
 }
 
 .promo__field,
 .promo__value {
   padding-top: 8px;
   padding-bottom: 8px;
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid $bgr-dark;
 }
 
 .promo__price {
   @include bold-text;
   font-size: 17px;
   line-height: 24px;
-  color: #444444;
+  color: $text-color;
+  text-align: center;
+}
+
+.promo__button {
+  margin-bottom: 36px;
+}
+
+@media (min-width: $tablet) {
+  .promo__title-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 55px;
+  }
+
+  .promo__container {
+    max-width: 1150px;
+    padding-left: 52px;
+    padding-right: 53px;
+    margin: 0 auto;
+  }
+
+  .promo__title {
+    @include tablet-title;
+  }
+
+  .promo__wrapper {
+    order: 0;
+    width: 38%;
+  }
+
+  .promo__price {
+    font-size: 20px;
+  }
+
+  .promo__popular {
+    margin-top: 10px;
+    width: 70px;
+    text-align: center;
+  }
+
+  .promo__descr {
+    font-size: 17px;
+    line-height: 30px;
+    margin-top: 0;
+  }
+
+  .promo__img {
+    position: absolute;
+    right: 53px;
+    top: 125px;
+  }
+
+  .promo__button {
+    margin-bottom: 53px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .promo__container {
+    @include container--desktop;
+  }
+
+  .promo__title-group {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .promo__title {
+    font-size: 53px;
+    line-height: 57px;
+    order: 2;
+  }
+
+  .promo__popular {
+    margin: 0;
+    margin-left: 50px;
+    margin-right: 58px;
+  }
+
+  .promo__wrapper {
+    width: 26%;
+    margin-left: 178px;
+  }
+
+  .promo__button {
+    margin-bottom: 70px;
+  }
 }

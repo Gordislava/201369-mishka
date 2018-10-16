@@ -1,6 +1,25 @@
 .user-nav__list {
-  width: 320px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  @include list-norm;
+}
+
+.user-nav {
+  order: 3;
+}
+
+@media (min-width: $tablet) {
+  .user-nav {
+    order: 2;
+    display: flex;
+  }
+
+  .user-nav__list {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: $desktop) {
+  .user-nav {
+    order: 3;
+  }
 }
