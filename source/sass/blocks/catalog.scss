@@ -6,8 +6,8 @@
   width: auto;
   max-width: 767px;
   margin: 0 auto;
-
-  background-image: url("../img/hero-tablet@1x.jpg");
+  background-image: url("../img/hero-mobile@1x.jpg");
+  background-size: 575px auto;
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -19,7 +19,7 @@
   color: $text-dark;
   text-align: center;
   padding-top: 86px;
-  padding-bottom: 130px;
+  margin-bottom: 130px;
   margin: 0 auto;
   width: 80%;
 }
@@ -58,11 +58,14 @@
   .catalog__container {
     @include container--tablet;
     border-top: 1px solid $border-color;
+    background-image: url("../img/hero-tablet@1x.jpg");
+    background-size: 1150px auto;
   }
 
   .catalog__title {
     @include tablet-title;
     padding-top: 174px;
+    margin-bottom: 370px;
   }
 
   .catalog__list {
@@ -88,11 +91,14 @@
 @media (min-width: $desktop) {
   .catalog__container {
     @include container--desktop;
+    background-image: url("../img/hero-desktop@1x.jpg");
+    background-size: cover;
   }
 
   .catalog__title {
     font-size: 53px;
     line-height: 57px;
+    margin-bottom: 354px;
   }
 
   .catalog__list {

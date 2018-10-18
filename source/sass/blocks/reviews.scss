@@ -58,6 +58,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     position: relative;
+    background-image: url("../img/review@1x.jpg");
+    background-size: 350px auto;
+    background-repeat: no-repeat;
+    background-position: top left;
   }
 
   .reviews__wrapper {
@@ -70,6 +74,7 @@
   .reviews__title {
     @include tablet-title;
     order: 0;
+    padding-top: 80px;
   }
 
   .reviews__write {
@@ -110,6 +115,7 @@
 @media (min-width: $desktop) {
   .reviews__container {
     @include container--desktop;
+    background-position: 50px 0;
   }
 
   .reviews__wrapper {
@@ -123,6 +129,8 @@
 
   .reviews__write {
     width: 15.5%;
+    margin-top: 80px;
+  }
   }
 
   .review__contacts {
@@ -131,5 +139,6 @@
 
   .reviews__button-wrapper {
     right: 0;
+    top: 385px;
   }
 }
