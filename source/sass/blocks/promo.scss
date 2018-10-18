@@ -86,6 +86,7 @@
     padding-left: 52px;
     padding-right: 53px;
     margin: 0 auto;
+    padding-bottom: 53px;
   }
 
   .promo__title {
@@ -120,13 +121,18 @@
   }
 
   .promo__button {
-    margin-bottom: 53px;
+    margin-bottom: 0;
+  }
+
+  .promo__price-wrapper {
+    margin-top: 37px;
   }
 }
 
 @media (min-width: $desktop) {
   .promo__container {
     @include container--desktop;
+    padding-bottom: 73px;
   }
 
   .promo__title-group {
@@ -138,12 +144,19 @@
     font-size: 53px;
     line-height: 57px;
     order: 2;
+    padding-top: 63px;
+  }
+
+  .promo__img {
+    top: 0;
+    z-index: -1;
   }
 
   .promo__popular {
     margin: 0;
     margin-left: 50px;
     margin-right: 58px;
+    padding-top: 63px;
   }
 
   .promo__wrapper {

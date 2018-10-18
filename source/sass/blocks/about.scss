@@ -33,6 +33,7 @@
     max-width: 1150px;
     padding-left: 52px;
     padding-right: 53px;
+    padding-top: 45px;
   }
 
   .about__title {
@@ -76,6 +77,7 @@
 @media (min-width: $desktop) {
   .about__container {
     @include container--desktop;
+    margin-top: 55px;
   }
 
   .about__title {
