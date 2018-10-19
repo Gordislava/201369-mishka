@@ -10,6 +10,7 @@
   @include small-title;
   margin: 0;
   padding-top: 34px;
+  padding-bottom: 30px;
 }
 
 .about__list {
@@ -22,9 +23,51 @@
   font-size: 17px;
   line-height: 20px;
   color: $text-dark;
-  padding-top: 80px;
+  padding-top: 57px;
   padding-bottom: 30px;
   width: 78%;
+}
+
+.about__item--ecology {
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+  background-size: 32px 32px;
+  background-position: left top;
+}
+
+.about__item--scandinavian {
+  background-image: url("../img/icon-feature-money.svg");
+  background-repeat: no-repeat;
+  background-size: 47px 27px;
+  background-position: left top;
+}
+
+.about__item--like {
+  background-image: url("../img/icon-feature-heart.svg");
+  background-repeat: no-repeat;
+  background-size: 34px 27px;
+  background-position: left top;
+}
+
+.about__item--handmade {
+  background-image: url("../img/icon-feature-ball.svg");
+  background-repeat: no-repeat;
+  background-size: 35px 34px;
+  background-position: left top;
+}
+
+.about__item--manufacturer {
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-repeat: no-repeat;
+  background-size: 55px 23px;
+  background-position: left top;
+}
+
+.about__item--gift {
+  background-image: url("../img/icon-feature-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 33px 32px;
+  background-position: left top;
 }
 
 @media (min-width: $tablet) {
