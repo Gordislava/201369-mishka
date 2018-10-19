@@ -76,6 +76,7 @@
 
   .product-item__link--img {
     width: 50%;
+    height: 334px;
   }
 
   .product-item__text {
@@ -120,5 +121,9 @@
 
   .product-item__price-group {
     margin-top: auto;
+  }
+
+  .product-item__link--img {
+    height: auto;
   }
 }
