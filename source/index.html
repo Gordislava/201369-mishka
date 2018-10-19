@@ -85,10 +85,13 @@
                 <p class="promo__price">Цена: 990 руб.</p>
                 <button class="button promo__button" type="button">Заказать</button>
               </div>
-              <img class="promo__img" src="http://placehold.it/260x315" width="260" height="315" alt="Вязанные корзинки">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+                <img class="promo__img" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Вязанные корзинки">
+              </picture>
             </div>
           </div>
-        </div>
       </section>
       <section class="about">
         <div class="about__container">
@@ -112,7 +115,7 @@
                 <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
                 </p>
                 <cite class="review__autor">Анастасия Красильникова
-                  <p class="review__contacts">@misssssiskras</p>
+                  <span class="review__contacts">@misssssiskras</span>
                 </cite>
               </blockquote>
               <div class="reviews__button-wrapper">
@@ -146,7 +149,11 @@
           </div>
         </div>
             <div class="map contacts__map">
-              <img class="map__img" src="http://placehold.it/320x457" alt="Где мы находимся">
+              <picture>
+                <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+                <img class="map__img" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Где мы находимся">
+              </picture>
             </div>
             <button class="button contacts__button" type="button">Напишите нам</button>
       </section>

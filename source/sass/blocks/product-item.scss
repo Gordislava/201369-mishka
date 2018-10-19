@@ -67,7 +67,6 @@
   .product-item__descr {
     font-size: 15px;
     line-height: 30px;
-    margin-bottom: 206px;
   }
 
   .product-item__price {
@@ -75,12 +74,23 @@
     line-height: 24px;
   }
 
-  .product-item__link {
+  .product-item__link--img {
     width: 50%;
+    height: 334px;
   }
 
   .product-item__text {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-item__link--title {
+    width: 100%;
+  }
+
+  .product-item__price-group {
+    margin-top: auto;
   }
 }
 
@@ -111,5 +121,9 @@
 
   .product-item__price-group {
     margin-top: auto;
+  }
+
+  .product-item__link--img {
+    height: auto;
   }
 }

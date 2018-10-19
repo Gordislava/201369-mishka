@@ -33,6 +33,7 @@
   @include basic-text;
   font-size: 17px;
   line-height: 30px;
+  display: block;
 }
 
 .reviews__button-wrapper {
@@ -62,6 +63,10 @@
     background-size: 350px auto;
     background-repeat: no-repeat;
     background-position: top left;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__wrapper {
@@ -80,6 +85,7 @@
   .reviews__write {
     width: 27%;
     order: 1;
+    margin-top: 80px;
   }
 
   .reviews__text {
@@ -107,7 +113,7 @@
   .reviews__button-wrapper {
     width: 25%;
     position: absolute;
-    top: 305px;
+    top: 385px;
     right: 45px;
   }
 }
