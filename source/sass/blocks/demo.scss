@@ -8,6 +8,7 @@
 .demo__item {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .demo__title {
@@ -61,14 +62,18 @@
   .demo__img {
     position: absolute;
     width: 64%;
-    height: 100%;
+  }
+
+  .demo__picture {
+    width: 64%;
+    position: absolute;
   }
 
   .demo__title {
     width: 14%;
     padding-left: 0;
     padding-top: 100px;
-    padding-bottom: 42px;
+    padding-bottom: 52px;
     align-self: flex-end;
     margin-right: 135px;
   }
@@ -79,11 +84,13 @@
     width: 21%;
     align-self: flex-end;
     margin-right: 60px;
+    margin-bottom: 51px;
   }
 
   .demo__button {
     align-self: flex-end;
     margin-right: 70px;
     width: 20%;
+    margin-bottom: 65px;
   }
 }
