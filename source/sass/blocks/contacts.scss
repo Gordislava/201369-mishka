@@ -12,7 +12,9 @@
   line-height: 30px;
   color: $text-dark;
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  padding-top: 45px;
 }
 
 .contacts__list {
@@ -68,6 +70,10 @@
   .contacts__title {
     @include tablet-title;
     padding-top: 70px;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    background-size: 47px 81px;
+    background-position: 600px 45px;
   }
 
   .contacts__list > tbody {
@@ -102,6 +108,19 @@
     font-size: 53px;
     line-height: 57px;
     padding-top: 90px;
+    background-image: none;
+    position: relative;
+  }
+
+  .contacts__title::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-flag.svg");
+    background-repeat: no-repeat;
+    width: 47px;
+    height: 81px;
+    top: 75px;
+    left: -100px;
   }
 
   .contacts__list {

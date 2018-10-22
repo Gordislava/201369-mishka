@@ -7,6 +7,7 @@
 .cart__link {
   color: $text-dark;
   text-decoration: none;
+  position: relative;
   padding-top: 32px;
   padding-bottom: 30px;
   padding-left: 76px;
@@ -20,6 +21,24 @@
   }
 }
 
+.cart__icon {
+  position: absolute;
+  left: 25px;
+  top: 30px;
+  opacity: 0.2;
+}
+
+.cart__link:hover .cart__icon {
+  fill: $accent-light;
+  opacity: 1;
+}
+
+.cart__icon:hover {
+  opacity: 1;
+}
+
+
+
 @media (min-width: $tablet) {
   .cart {
     border-bottom: none;
@@ -29,5 +48,10 @@
 
   .cart__link {
     padding: 0;
+  }
+
+  .cart__icon {
+    top: 0;
+    left: -50px;
   }
 }

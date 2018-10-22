@@ -1,5 +1,5 @@
 .modal {
-  display: none;
+  display: block;
   box-sizing: border-box;
   width: 320px;
   border: 1px solid rgba(0, 1, 1, 0.25);
@@ -64,5 +64,38 @@
   &:hover {
     background-color: $accent-dark;
     border-color: $accent-dark;
+  }
+}
+
+@media (min-width: $tablet) {
+  .modal {
+    width: 566px;
+  }
+
+  .modal__container {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
+  .modal__title {
+    width: 100%;
+    font-size: 30px;
+    line-height: 57px;
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+
+  .modal__descr {
+    font-size: 17px;
+    line-height: 30px;
+    margin-bottom: 30px;
+  }
+
+  .modal__list {
+    align-self: center;
+  }
+
+  .modal__button {
+    align-self: center;
   }
 }

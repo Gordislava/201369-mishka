@@ -6,10 +6,8 @@
 .assortment-list__link {
   font-size: 15px;
   line-height: 24px;
-  // padding: 25px 0 0 0;
   display: inline-block;
   color: $text-dark;
-  // padding-top: 32px;
   padding-bottom: 32px;
   text-decoration: none;
 }
@@ -18,8 +16,11 @@
   .assortment-list {
     display: flex;
     width: 42%;
-    justify-content: space-between;
     order: 4;
     margin-top: 25px;
+  }
+
+  .assortment-list__item {
+    margin-right: 60px;
   }
 }

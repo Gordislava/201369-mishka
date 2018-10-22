@@ -13,6 +13,19 @@
   position: relative;
 }
 
+.promo__container::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 80px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: no-repeat;
+  bottom: -80px;
+  left: 0;
+  background-size: 320px 8px;
+}
+
+
 .promo__title {
   @include small-title;
   margin: 0;
@@ -127,6 +140,10 @@
   .promo__price-wrapper {
     margin-top: 37px;
   }
+
+  .promo__container::after {
+    background-size: 768px 17px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -166,5 +183,11 @@
 
   .promo__button {
     margin-bottom: 70px;
+  }
+
+  .promo__container::after {
+    background-size: 1050px 21px;
+    background-position: center;
+
   }
 }

@@ -8,6 +8,7 @@
   max-width: 767px;
   margin: 0 auto;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .page-main__main-title {
@@ -35,6 +36,18 @@
     font-size: 43px;
     line-height: 50px;
   }
+
+  .page-main__header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: no-repeat;
+    bottom: -57px;
+    left: 0;
+    background-size: 768px 24px;
+  }
 }
 
 @media (min-width: $desktop) {
@@ -43,7 +56,6 @@
   }
 
   .page-main__header {
-
     max-width: 1440px;
     margin-bottom: 128px;
   }
@@ -53,5 +65,9 @@
     line-height: 57px;
     padding-top: 110px;
     padding-bottom: 80px;
+  }
+
+  .page-main__header::after {
+    background-size: 1150px 34px;
   }
 }

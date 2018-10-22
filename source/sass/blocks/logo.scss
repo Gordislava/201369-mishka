@@ -4,11 +4,26 @@
   padding-bottom: 22px;
 }
 
+.logo:hover {
+  opacity: 0.6;
+}
+
+.logo:active {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet) {
   .logo {
     display: flex;
     justify-content: flex-start;
     padding-bottom: 20px;
     padding-top: 22px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .logo {
+    padding-top: 9px;
+    padding-bottom: 0;
   }
 }
