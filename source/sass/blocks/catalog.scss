@@ -90,6 +90,11 @@
 }
 
 @media (min-width: $tablet) {
+  // .catalog {
+  //   background-image: url("../img/bg-zigzag-fill.svg");
+  //   background-repeat: repeat-x;
+  // }
+
   .catalog__container {
     @include container--tablet;
     border-top: 1px solid $border-color;
@@ -121,6 +126,20 @@
     width: 50%;
   }
 
+  .catalog__item--interior {
+    border-bottom: 5px solid $accent-light;
+  }
+
+  .catalog__item--toys {
+    border-top: 5px solid $accent-dark;
+  }
+
+  .catalog__item:hover {
+    transform: translateY(-5px);
+
+    box-sizing: content-box;
+  }
+
   .catalog__link {
     font-size: 20px;
     line-height: 30px;
@@ -137,7 +156,7 @@
     width: 100%;
     height: 80px;
     background-image: url("../img/bg-zigzag-fill.svg");
-    background-repeat: no-repeat;
+    background-repeat: repeat-x;
     bottom: -57px;
     left: 0;
     background-size: 768px 24px;
