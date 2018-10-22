@@ -99,17 +99,22 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
     }
+    display: flex;
+    flex-direction: column;
+    min-height: 746px;
+    margin-bottom: 55px;
   }
 
   .catalog__title {
     @include tablet-title;
     padding-top: 174px;
-    margin-bottom: 350px;
+    margin-bottom: 0;
   }
 
   .catalog__list {
     display: flex;
-    margin-bottom: 55px;
+    margin-top: auto;
+    margin-bottom: 0;
   }
 
   .catalog__item {
@@ -148,16 +153,13 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
     }
+    margin-bottom: 70px;
   }
 
   .catalog__title {
     font-size: 53px;
     line-height: 57px;
     margin-bottom: 354px;
-  }
-
-  .catalog__list {
-    margin-bottom: 134px;
   }
 
   .catalog__container::after {
