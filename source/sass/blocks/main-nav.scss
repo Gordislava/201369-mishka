@@ -9,6 +9,17 @@
 
 .main-nav__hamb {
   display: none;
+  width: 21px;
+  height: 20px;
+  border: none;
+  background-color: $bgr-color;
+  background-image: url("../img/icon-menu-close.svg");
+  background-repeat: no-repeat;
+  background-size: 21px 20px;
+  background-position: center;
+  position: absolute;
+  top: 30px;
+  right: 30px;
 }
 
 .main-nav__wrapper {
@@ -34,9 +45,15 @@
     display: inline-block;
     order: 5;
     font-size: 15px;
-    padding-top: 25px;
+    padding-top: 4px;
     margin: 0;
     position: relative;
     z-index: 10;
+  }
+}
+
+@media (min-width: $desktop) {
+  .main-nav__note {
+    margin-top: 15px;
   }
 }

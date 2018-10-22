@@ -12,7 +12,7 @@
   line-height: 30px;
   color: $text-dark;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
   padding-bottom: 10px;
   padding-top: 45px;
 }
@@ -20,12 +20,18 @@
 .contacts__list {
   @include basic-text;
   line-height: 30px;
-  margin-bottom: 42px;
+  margin-bottom: 34px;
   width: 100%;
 }
 
 .contacts__field {
   padding-right: 20px;
+  vertical-align: top;
+}
+
+.contacts__field--adress,
+.contacts__value--adress {
+  padding-top: 25px;
 }
 
 .contacts__link {
@@ -51,14 +57,14 @@
 
 .contacts__map {
   width: 100%;
-  margin-bottom: 39px;
+  margin-bottom: 35px;
   display: flex;
   justify-content: center;
 }
 
 .contacts__button {
   display: block;
-  max-width: 260px;
+  width: 81%;
   margin: 0 auto;
 }
 
@@ -86,6 +92,7 @@
     background-repeat: no-repeat;
     background-size: 47px 81px;
     background-position: 600px 45px;
+    margin-bottom: 34px;
   }
 
   .contacts__list > tbody {
@@ -100,6 +107,27 @@
 
   .contacts__button {
     width: 30%;
+  }
+
+  .contacts__field--adress,
+  .contacts__value--adress {
+    padding-top: 0;
+  }
+
+  .contacts__field--adress {
+    padding-left: 30px;
+  }
+
+  .contacts__field {
+    padding-right: 34px;
+  }
+
+  .contacts__list {
+    margin-bottom: 55px;
+  }
+
+  .contacts__map {
+    margin-bottom: 50px;
   }
 }
 
@@ -119,7 +147,7 @@
   .contacts__title {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 90px;
+    padding-top: 27px;
     background-image: none;
     position: relative;
   }
@@ -131,13 +159,13 @@
     background-repeat: no-repeat;
     width: 47px;
     height: 81px;
-    top: 75px;
-    left: -100px;
+    top: 18px;
+    left: -112px;
   }
 
   .contacts__list {
     width: 65%;
-    margin-bottom: 45px;
+    margin-bottom: 82px;
   }
 
   .contacts__list > tbody {
@@ -146,7 +174,7 @@
 
   .contacts__map {
     position: absolute;
-    top: 0;
+    top: -45px;
     left: 50%;
     width: 45%;
   }
@@ -159,8 +187,17 @@
     vertical-align: top;
   }
 
+  .contacts__field--adress {
+    padding-left: 0;
+  }
+
+  .contacts__row {
+    width: 50%;
+  }
+
   .contacts__button {
     margin-left: 20%;
-    width: 230px;
+    width: 20%;
+    min-width: 230px;
   }
 }

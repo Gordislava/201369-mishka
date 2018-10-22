@@ -1,6 +1,6 @@
 .cart {
-  padding-top: 32px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 27px;
   border-bottom: 1px solid $border-color;
 }
 
@@ -23,8 +23,8 @@
 
 .cart__icon {
   position: absolute;
-  left: 25px;
-  top: 30px;
+  left: 30px;
+  top: 33px;
   opacity: 0.2;
 }
 
@@ -37,13 +37,12 @@
   opacity: 1;
 }
 
-
-
 @media (min-width: $tablet) {
   .cart {
     border-bottom: none;
-    padding-left: 80px;
+    padding-left: 92px;
     padding-bottom: 20px;
+    padding-top: 31px;
   }
 
   .cart__link {
@@ -51,7 +50,13 @@
   }
 
   .cart__icon {
-    top: 0;
-    left: -50px;
+    top: 5px;
+    left: -61px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .cart {
+    padding-left: 95px;
   }
 }

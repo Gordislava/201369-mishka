@@ -1,9 +1,9 @@
 .social__list {
   @include list-norm;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 27px;
+  padding-bottom: 21px;
   display: flex;
-  width: 50%;
+  width: 55%;
   justify-content: space-between;
   margin: 0 auto;
 }
@@ -19,7 +19,7 @@
 @media (min-width: $tablet) {
   .social__list {
     padding: 0;
-    width: 30%;
+    width: 43%;
     margin: 0 auto;
   }
 }

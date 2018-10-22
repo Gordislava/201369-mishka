@@ -14,15 +14,16 @@
   height: 80px;
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  bottom: -80px;
+  bottom: -8px;
   left: 0;
   background-size: 320px 8px;
+  transform: rotate(180deg);
 }
 
 .reviews__title {
   @include small-title;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 .reviews__item {
@@ -30,9 +31,14 @@
   margin: 0;
 }
 
+.reviews__list {
+  width: 95%;
+}
+
 .reviews__text {
   @include basic-text;
   line-height: 30px;
+  margin-bottom: 26px;
 }
 
 .review__autor {
@@ -40,6 +46,7 @@
   font-size: 17px;
   line-height: 24px;
   color: $text-dark;
+  font-style: italic;
 }
 
 .review__contacts {
@@ -47,12 +54,14 @@
   font-size: 17px;
   line-height: 30px;
   display: block;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  font-style: italic;
 }
 
 .reviews__button-wrapper {
   margin-bottom: 38px;
   display: flex;
+  width: 260px;
 }
 
 .reviews__write {
@@ -73,7 +82,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50px 26px;
-  width: 130px;
+  width: 50%;
   min-height: 52px;
   padding: 0;
   outline: none;
@@ -87,7 +96,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: 50px 26px;
-  min-width: 130px;
+  min-width: 50%;
   min-height: 52px;
   padding: 0;
   outline: none;
@@ -136,12 +145,13 @@
     width: 27%;
     order: 1;
     margin-top: 80px;
+    margin-bottom: 30px;
   }
 
   .reviews__text {
     font-size: 17px;
     line-height: 30px;
-    margin-bottom: 68px;
+    margin-bottom: 56px;
     max-width: 720px;
   }
 
@@ -152,19 +162,20 @@
 
   .reviews__list {
     order: 2;
-    margin-bottom: 70px;
+    margin-bottom: 53px;
   }
 
   .review__contacts {
     margin-top: 5px;
-    padding-bottom: 53px;
+    padding-bottom: 38px;
   }
 
   .reviews__button-wrapper {
     width: 21%;
     position: absolute;
-    top: 385px;
-    right: 45px;
+    top: 356px;
+    right: 71px;
+    min-width: auto;
   }
 
   .reviews__prev {
@@ -204,11 +215,13 @@
   .reviews__title {
     font-size: 53px;
     line-height: 57px;
+    padding-top: 74px;
   }
 
   .reviews__write {
     width: 15.5%;
     margin-top: 80px;
+    min-width: 180px;
   }
 
   .review__contacts {
@@ -216,8 +229,18 @@
   }
 
   .reviews__button-wrapper {
-    right: 0;
-    top: 385px;
+    right: 7px;
+    top: 307px;
+  }
+
+  .reviews__list {
+    width: 93%;
+    margin-bottom: 98px;
+  }
+
+  .reviews__text {
+    max-width: none;
+    margin-bottom: 37px;
   }
 
   .reviews__container::after {
