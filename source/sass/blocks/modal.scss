@@ -44,15 +44,56 @@
 
 .modal__item {
   padding: 20px 34px;
+  position: relative;
+  box-sizing: border-box;
+  width: 30%;
+  text-align: center;
+}
+
+.modal__item label {
+  cursor: pointer;
+}
+
+// .modal__item {
+//   padding: 20px 34px;
+//   border: 2px solid rgba(68, 68, 68, 0.1);
+//
+//   &:hover {
+//     border-color: rgba(68, 68, 68, 0.3);
+//   }
+//
+//   &:active,
+//   &:focus {
+//     border-color: $accent-light;
+//   }
+// }
+
+.modal__input-radio + label::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 52px;
   border: 2px solid rgba(68, 68, 68, 0.1);
+  left: 0;
+  top: 0;
+}
 
-  &:hover {
-    border-color: rgba(68, 68, 68, 0.3);
-  }
+.modal__input-radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 52px;
+  border: 2px solid $accent-light;
+  left: 0;
+  top: 0;
+}
 
-  &:active {
-    border-color: $accent-light;
-  }
+.modal__input-radio:hover + label::before {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
+.modal__input-radio:active + label::before {
+  border: 2px solid $accent-light;
 }
 
 .modal__button {
@@ -92,10 +133,25 @@
   }
 
   .modal__list {
-    align-self: center;
+      align-self: center;
+      width: 100%
+  }
+
+  .modal__item {
+    padding: 20px 52px;
   }
 
   .modal__button {
     align-self: center;
+  }
+
+  .modal__input-radio + label::before {
+    content: "";
+    width: 110px;
+  }
+
+  .modal__input-radio:checked + label::after {
+    width: 110px;
+
   }
 }

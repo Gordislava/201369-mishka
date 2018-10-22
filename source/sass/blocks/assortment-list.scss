@@ -18,6 +18,8 @@
     width: 42%;
     order: 4;
     margin-top: 25px;
+    position: relative;
+    z-index: 10;
   }
 
   .assortment-list__item {

@@ -6,7 +6,8 @@
   width: auto;
   max-width: 767px;
   margin: 0 auto;
-  background-image: url("../img/hero-mobile@1x.jpg");
+  background-image:
+  url("../img/hero-mobile@1x.jpg");
   background-size: 575px auto;
   background-repeat: no-repeat;
   background-position: top;
@@ -162,4 +163,5 @@
   .catalog__container::after {
     background-size: 1150px 34px;
   }
+
 }
