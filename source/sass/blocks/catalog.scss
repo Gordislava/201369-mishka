@@ -14,6 +14,7 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/hero-mobile@2x.jpg");
   }
+  position: relative;
 }
 
 .catalog__title {
@@ -22,40 +23,69 @@
   line-height: 30px;
   color: $text-dark;
   text-align: center;
-  padding-top: 86px;
+  padding-top: 71px;
   margin: 0 auto;
-  margin-bottom: 130px;
+  margin-bottom: 120px;
   width: 80%;
 }
 
+
 .catalog__list {
   @include list-norm;
-  margin-bottom: 34px;
-}
-
-.catalog__item {
-  padding-left: 30px;
-  padding-right: 30px;
+  margin-bottom: 31px;
 }
 
 .catalog__item--interior {
   background-color: $accent-light;
+  position: relative;
 }
 
 .catalog__item--toys {
   background-color: $accent-dark;
+  position: relative;
 }
 
 .catalog__link {
   @include bold-text;
+  box-sizing: border-box;
   display: inline-block;
   text-decoration: none;
   color: $bgr-color;
+  width: 100%;
   font-size: 19px;
+  text-align: left;
   padding-top: 30px;
   padding-bottom: 30px;
-  text-align: left;
-  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.catalog__item--interior-icon {
+  position: absolute;
+  right: 36px;
+  top: 23px;
+  fill: $icon-dark;
+  opacity: 0.5;
+}
+
+.catalog__item--toys-icon {
+  position: absolute;
+  right: 25px;
+  top: 23px;
+  fill: $icon-dark;
+  opacity: 0.5;
+}
+
+.catalog__item:hover .catalog__item--interior-icon,
+.catalog__item--toys:hover .catalog__item--toys-icon {
+  opacity: 0.7;
+}
+
+.catalog__item:active .catalog__item--interior-icon,
+.catalog__item:active .catalog__link--interior,
+.catalog__item--toys:active .catalog__item--toys-icon,
+.catalog__item--toys:active .catalog__link--toys {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet) {
@@ -68,31 +98,65 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
     }
+    display: flex;
+    flex-direction: column;
+    min-height: 757px;
+    margin-bottom: 37px;
   }
 
   .catalog__title {
     @include tablet-title;
-    padding-top: 174px;
-    margin-bottom: 370px;
+    padding-top: 155px;
+    margin-bottom: 0;
   }
 
   .catalog__list {
     display: flex;
-    margin-bottom: 55px;
+    margin-top: auto;
+    margin-bottom: 0;
   }
 
   .catalog__item {
     width: 50%;
   }
 
-  .catalog__item--interior:hover {
-    position: absolute;
-    border-top: 5px solid $accent-light;
+  .catalog__item--interior {
+    border-bottom: 5px solid $accent-light;
+  }
+
+  .catalog__item--toys {
+    border-top: 5px solid $accent-dark;
+  }
+
+  .catalog__item:hover {
+    transform: translateY(-5px);
+
+    box-sizing: content-box;
   }
 
   .catalog__link {
     font-size: 20px;
     line-height: 30px;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    padding-left: 37px;
+  }
+
+  .catalog__item--toys-icon {
+    top: 30px;
+    right: 35px;
+  }
+
+  .catalog__container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    bottom: -57px;
+    left: 0;
+    background-size: 768px 24px;
   }
 }
 
@@ -105,6 +169,7 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-desktop@2x.jpg");
     }
+    margin-bottom: 60px;
   }
 
   .catalog__title {
@@ -113,7 +178,9 @@
     margin-bottom: 354px;
   }
 
-  .catalog__list {
-    margin-bottom: 134px;
+  .catalog__container::after {
+    background-size: 1150px 34px;
+    left: -31px;
+    bottom: -54px;
   }
 }

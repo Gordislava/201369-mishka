@@ -1,5 +1,7 @@
 .main-form__descr {
   @include basic-text--small;
+  width: 90%;
+  margin-bottom: 0;
 }
 
 .main-form__container {

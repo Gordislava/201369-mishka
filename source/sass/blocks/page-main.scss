@@ -8,6 +8,7 @@
   max-width: 767px;
   margin: 0 auto;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .page-main__main-title {
@@ -15,10 +16,14 @@
   font-size: 27px;
   line-height: 30px;
   padding-top: 70px;
-  padding-bottom: 70px;
+  padding-bottom: 76px;
   width: 100%;
   text-align: center;
   margin: 0;
+}
+
+.page-main__header--form {
+  margin-bottom: 23px;
 }
 
 @media (min-width: $tablet) {
@@ -28,12 +33,26 @@
 
   .page-main__header {
     max-width: 1149px;
-    margin-bottom: 80px;
+    margin-bottom: 68px;
   }
 
   .page-main__main-title {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 97px;
+    padding-bottom: 91px;
+  }
+
+  .page-main__header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    background-image: url("../img/bg-zigzag-fill.svg");
+    background-repeat: repeat-x;
+    bottom: -57px;
+    left: 0;
+    background-size: 768px 24px;
   }
 }
 
@@ -43,15 +62,18 @@
   }
 
   .page-main__header {
-
     max-width: 1440px;
-    margin-bottom: 128px;
+    margin-bottom: 123px;
   }
 
   .page-main__main-title {
     font-size: 53px;
     line-height: 57px;
-    padding-top: 110px;
-    padding-bottom: 80px;
+    padding-top: 100px;
+    padding-bottom: 106px;
+  }
+
+  .page-main__header::after {
+    background-size: 1150px 34px;
   }
 }

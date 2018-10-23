@@ -9,12 +9,13 @@
 .about__title {
   @include small-title;
   margin: 0;
-  padding-top: 34px;
+  padding-top: 36px;
+  padding-bottom: 32px;
 }
 
 .about__list {
   @include list-norm;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 }
 
 .about__item {
@@ -22,9 +23,53 @@
   font-size: 17px;
   line-height: 20px;
   color: $text-dark;
-  padding-top: 80px;
+  padding-top: 52px;
   padding-bottom: 30px;
-  width: 78%;
+  width: 89%;
+}
+
+.about__item--ecology {
+  background-image: url("../img/icon-feature-flower.svg");
+  background-repeat: no-repeat;
+  background-size: 48px 38px;
+  background-position: left top;
+}
+
+.about__item--scandinavian {
+  background-image: url("../img/icon-feature-money.svg");
+  background-repeat: no-repeat;
+  background-size: 47px 27px;
+  background-position: left top;
+  padding-bottom: 34px;
+  padding-top: 54px;
+}
+
+.about__item--like {
+  background-image: url("../img/icon-feature-heart.svg");
+  background-repeat: no-repeat;
+  background-size: 47px 27px;
+  background-position: left top;
+}
+
+.about__item--handmade {
+  background-image: url("../img/icon-feature-ball.svg");
+  background-repeat: no-repeat;
+  background-size: 35px 34px;
+  background-position: left top;
+}
+
+.about__item--manufacturer {
+  background-image: url("../img/icon-feature-rocket.svg");
+  background-repeat: no-repeat;
+  background-size: 54px 23px;
+  background-position: -5px top;
+}
+
+.about__item--gift {
+  background-image: url("../img/icon-feature-gift.svg");
+  background-repeat: no-repeat;
+  background-size: 39px 32px;
+  background-position: left top;
 }
 
 @media (min-width: $tablet) {
@@ -33,24 +78,26 @@
     max-width: 1150px;
     padding-left: 52px;
     padding-right: 53px;
-    padding-top: 45px;
+    padding-top: 31px;
   }
 
   .about__title {
     @include tablet-title;
+    padding-bottom: 48px;
   }
 
   .about__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 82px;
+    margin-bottom: 26px;
   }
 
   .about__item {
     font-size: 20px;
     line-height: 22px;
-    width: 43%;
+    width: 49%;
+    padding-bottom: 58px;
   }
 
   .about__item--scandinavian {
@@ -77,18 +124,20 @@
 @media (min-width: $desktop) {
   .about__container {
     @include container--desktop;
-    margin-top: 55px;
+    margin-top: 0;
+    padding-top: 0;
   }
 
   .about__title {
     font-size: 53px;
     line-height: 57px;
     padding-left: 175px;
+    padding-top: 17px;
   }
 
   .about__list {
     padding-left: 175px;
-    width: 63%;
-    margin-bottom: 90px;
+    width: 65%;
+    margin-bottom: 32px;
   }
 }
