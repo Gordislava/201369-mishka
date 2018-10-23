@@ -30,8 +30,9 @@
 .demo__text {
   @include basic-text--small;
   width: 67%;
-  margin-bottom: 29px;
+  margin-bottom: 24px;
   margin-left: 34px;
+  margin-top: 25px;
 }
 
 .demo__button {
@@ -81,8 +82,10 @@
     order: 2;
     font-size: 20px;
     position: static;
-    background-position: 35px 19px;
-    background-size: 37px 30px;
+    background-position: 35px 28px;
+    background-size: 43px 32px;
+    padding-top: 37px;
+    padding-left: 105px;
   }
 
   .demo__text {
@@ -91,16 +94,28 @@
     font-size: 15px;
     margin-left: 40px;
     background-position: 34px 25px;
+    margin-top: 10px;
+    margin-bottom: 41px;
   }
 
   .demo__button {
     order: 4;
-    width: 85%;
-    margin-left: 40px;
+    width: 88%;
+    margin-left: 41px;
+    margin-bottom: 46px;
+  }
+
+  .demo__list {
+    margin-bottom: 61px;
+  }
+
+  .demo__picture::before {
+    margin-top: -42px;
   }
 
   .demo__picture {
     padding-top: 0;
+    line-height: 0;
   }
 }
 
@@ -112,12 +127,12 @@
 
   .demo__picture {
     width: 682px;
-    height: 455px;
+    line-height: 0;
   }
 
   .demo__wrapper {
     width: 29%;
-    padding-left: 7%;
+    padding-left: 7.5%;
     flex-grow: 1;
   }
 
@@ -132,19 +147,21 @@
   .demo__title {
     width: 50%;
     padding-left: 0;
-    padding-top: 100px;
-    padding-bottom: 52px;
-    background-position: 0 60px;
+    padding-top: 95px;
+    padding-bottom: 38px;
+    background-position: 0 39px;
   }
 
   .demo__text {
     margin-top: 0;
     margin-left: 0;
+    line-height: 29px;
+    margin-bottom: 45px;
   }
 
   .demo__button {
     align-self: flex-end;
-    width: 79%;
+    width: 80%;
     margin-left: 0;
   }
 }

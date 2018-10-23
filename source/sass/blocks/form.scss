@@ -11,6 +11,7 @@
   font-size: 17px;
   text-transform: uppercase;
   position: relative;
+  margin-bottom: 25px;
 }
 
 .form__title::after {
@@ -21,6 +22,10 @@
   background-color: $accent-light;
   top: 50%;
   right: 0;
+}
+
+.form__title--checkbox {
+  margin-bottom: 25px;
 }
 
 .form__title--email::after {
@@ -39,6 +44,7 @@
 
 .form__list {
   @include list-norm;
+  margin-bottom: 10px;
 }
 
 .form__item {
@@ -47,7 +53,7 @@
   line-height: 18px;
   padding-top: 13px;
   padding-bottom: 13px;
-  margin-bottom: 22px;
+  margin-bottom: 0;
 }
 
 .form__checkbox-item,
@@ -55,6 +61,11 @@
   padding-left: 65px;
   box-sizing: border-box;
   position: relative;
+}
+
+.form__checkbox-item {
+  padding-bottom: 35px;
+  padding-top: 8px;
 }
 
 .form__name-input {
@@ -121,13 +132,14 @@
 
 .form__note {
   @include basic-text;
-  margin-top: 0;
   padding: 0;
   margin-bottom: 30px;
+  margin-top: 10px;
 }
 
 .form__button {
   margin-bottom: 15px;
+  width: 100%;
 }
 
 .form__item label {
@@ -137,12 +149,12 @@
 .form__input-radio + label::before {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 37px;
+  height: 38px;
   border: 2px solid $text-color;
   border-radius: 50%;
   left: 0;
-  top: 0;
+  top: 4px;
 }
 
 .form__input-radio:hover + label::before,
@@ -169,11 +181,11 @@
 .form__input-checkbox + label::before {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 38px;
+  height: 36px;
   border: 2px solid $text-color;
   left: 0;
-  top: 0;
+  top: -3px;
 }
 
 .form__input-checkbox:checked + label::after {
@@ -184,14 +196,26 @@
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
   background-size: 22px 16px;
-  left: 11px;
+  left: 8px;
   top: 50%;
-  margin-top: -8px;
+  margin-top: -21px;
 }
 
-fieldset {
+fieldset.form__field {
   margin: 0;
   padding: 0;
+}
+
+.form__title--name {
+  margin-top: 0;
+  margin-bottom: 17px;
+}
+
+.form__item--name {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  margin-top: 0;
+  padding-top: 7px;
 }
 
 .form__field--phone,
@@ -220,6 +244,18 @@ fieldset {
 .form__name-input--email:focus + .form__name-email, {
   fill: $form-accent;
   opacity: 1;
+}
+
+.form__name-input--phone,
+.form__name-input--email {
+  padding-top: 0;
+  padding-bottom: 13px;
+}
+
+.form__title--email,
+.form__title--comment {
+  margin-bottom: 30px;
+  margin-top: 25px;
 }
 
 @media (min-width: $tablet) {
@@ -252,13 +288,17 @@ fieldset {
     padding-left: 80px;
   }
 
+  .form__radio-item {
+    padding-bottom: 40px;
+  }
+
   .form__wrapper {
     width: auto;
     display: flex;
     flex-direction: row;
     padding: 0 52px;
     margin: 0;
-    margin-top: 50px;
+    margin-top: 43px;
     max-width: 1149px;
     justify-content: space-between;
     align-items: baseline;
@@ -276,10 +316,12 @@ fieldset {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 23px;
   }
 
   .form__checkbox-item {
-    width: 30%;
+    width: 48%;
+    padding-bottom: 45px;
   }
 
   .form__field--color,
@@ -288,12 +330,16 @@ fieldset {
     background-color: $bgr-dark;
   }
 
-  .form__wrapper-name .form__item:first-child {
+  .form__wrapper--name {
+    margin-bottom: 19px;
+  }
+
+  .form__wrapper-input .form__item:first-child {
     margin-top: 0;
     padding-top: 0;
   }
 
-  .form__wrapper-name {
+  .form__wrapper-input {
     width: 75%;
     display: flex;
     flex-direction: column;
@@ -317,7 +363,7 @@ fieldset {
   }
 
   .form__name-input--email {
-    margin-bottom: 50px;
+    margin-bottom: 44px;
   }
 
   .form__comment {
@@ -337,6 +383,11 @@ fieldset {
     order: 2;
     font-size: 17px;
     line-height: 30px;
+  }
+
+  .form__button {
+    margin-top: 15px;
+    width: 34%;
   }
 
   .form__input-radio + label::before {
@@ -360,9 +411,9 @@ fieldset {
     width: 33px;
     height: 22px;
     background-size: 33px 22px;
-    left: 14px;
+    left: 11px;
     top: 50%;
-    margin-top: -9px;
+    margin-top: -20px;
   }
 
   .form__title::after,
@@ -372,11 +423,12 @@ fieldset {
 
   .form__name-phone,
   .form__name-mail {
-    right: 50px;
+    left: 87%;
+    top: 57px;
   }
 
   .form__name-mail {
-    top: 60px;
+    top: 47px;
   }
 }
 
@@ -388,29 +440,54 @@ fieldset {
   }
 
   .main-form__descr {
-    margin-left: 225px;
+    margin-left: 175px;
     width: 60%;
     margin-bottom: 10px;
   }
 
-  .page-main__main-title {
-    padding-bottom: 110px;
-  }
-
-  .page-main__header {
-    margin-bottom: 110px;
-  }
-
   .form__checkbox-item {
-    width: 30%;
+    width: 33%;
+  }
+
+  .form__checkbox-item--white,
+  .form__checkbox-item--black,
+  .form__checkbox-item--pink,
+  .form__checkbox-item--gray {
+    width: 31%;
+  }
+
+  .form__checkbox-item--orange,
+  .form__checkbox-item--tiffany {
+    width: 34%;
   }
 
   .form__wrapper {
-    padding: 0 175px 0 60px;
+    padding: 0 227px 0 110px;
+  }
+
+  .form__wrapper-input {
+    width: 85%;
+  }
+
+  .form__list {
+    width: 86%;
+  }
+
+  .form__checkbox-list {
+    width: 88%;
   }
 
   .form__wrapper--color {
     padding-right: 120px;
+  }
+
+  .form__title--email {
+    margin-right: 58px;
+  }
+
+  .form__title--comment,
+  .form__title--phone {
+    margin-right: 81px;
   }
 
   .form__comment {
@@ -423,8 +500,12 @@ fieldset {
     padding: 0;
   }
 
+  .form__button {
+    width: 33%;
+  }
+
   .form__name-phone,
   .form__name-mail {
-    right: 16%;
+    left: 77%;
   }
 }

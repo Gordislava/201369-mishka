@@ -85,7 +85,7 @@
     </nav>
   </header>
     <main class="page-main main-container">
-      <div class="page-main__header">
+      <div class="page-main__header page-main__header--form">
         <h1 class="page-main__main-title">Вязание на заказ</h1>
       </div>
       <section class="main-form main-form__container">
@@ -109,29 +109,29 @@
           <fieldset class="form__field form__field--color">
             <div class="form__wrapper form__wrapper--color">
               <legend class="visually-hidden form__legend">Цвет</legend>
-              <h3 class="form__title">Цвет</h3>
+              <h3 class="form__title form__title--checkbox">Цвет</h3>
               <ul class="form__list form__checkbox-list">
-                <li class="form__item form__checkbox-item">
+                <li class="form__item form__checkbox-item form__checkbox-item--white">
                   <input class="visually-hidden form__input-checkbox" type="checkbox" name="white" id="white" checked>
                   <label for="white">Белый</label>
                 </li>
-                <li class="form__item form__checkbox-item">
+                <li class="form__item form__checkbox-item form__checkbox-item--gray">
                   <input class="visually-hidden form__input-checkbox" type="checkbox" name="gray" id="gray">
                   <label for="gray">Серый</label>
                 </li>
-                <li class="form__item form__checkbox-item">
+                <li class="form__item form__checkbox-item form__checkbox-item--tiffany">
                   <input class="visually-hidden form__input-checkbox" type="checkbox" name="tiffany" id="tiffany" checked>
                   <label for="tiffany">"Тиффани"</label>
                 </li>
-                <li class="form__item form__checkbox-item">
+                <li class="form__item form__checkbox-item form__checkbox-item--black">
                   <input class="visually-hidden form__input-checkbox" type="checkbox" name="black" id="black">
                   <label for="black">Черный</label>
                 </li>
-                <li class="form__item form__checkbox-item">
+                <li class="form__item form__checkbox-item form__checkbox-item--pink">
                   <input class="visually-hidden form__input-checkbox" type="checkbox" name="pink" id="pink">
                   <label for="pink">Розовый</label>
                 </li>
-                <li class="form__item form__checkbox-item">
+                <li class="form__item form__checkbox-item form__checkbox-item--orange">
                   <input class="visually-hidden form__input-checkbox" type="checkbox" name="orange" id="orange">
                   <label for="orange">Оранжевый</label>
                 </li>
@@ -139,19 +139,19 @@
             </div>
           </fieldset>
           <fieldset class="form__field">
-            <div class="form__wrapper">
+            <div class="form__wrapper form__wrapper--name">
               <legend class="visually-hidden form__legend">ФИО</legend>
-              <h3 class="form__title">ФИО</h3>
-              <div class="form__wrapper-name">
-                <p class="form__item">
+              <h3 class="form__title form__title--name">ФИО</h3>
+              <div class="form__wrapper-input">
+                <p class="form__item form__item--name">
                   <label for="name">Имя:</label>
                   <input required id="name" class="form__name-input must-fill" type="text" name="name" placeholder="Введите ваше имя*">
                 </p>
-                <p class="form__item">
+                <p class="form__item form__item--name">
                   <label for="surname">Фамилия:</label>
                   <input required id="surname" class="form__name-input must-fill" type="text" name="name" placeholder="Укажите фамилию*">
                 </p>
-                <p class="form__item">
+                <p class="form__item form__item--name">
                   <label for="fathername">Отчество:</label>
                   <input id="fathername" class="form__name-input" type="text" name="name" placeholder="Отчество, если желаете">
                 </p>
@@ -191,9 +191,9 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__container">
-        <div class="page-footer__wrapper">
-          <a class="logo page-footer__logo" href="index.html">
+      <div class="page-footer__container page-footer__container--form">
+        <div class="page-footer__wrapper page-footer__wrapper page-footer__wrapper--form">
+          <a class="logo page-footer__logo page-footer__logo--form" href="index.html">
             <svg class="page-footer__logo-img" width="102" height="34"><use xlink:href="#logo-footer"></use></svg>
           </a>
           <div class="page-footer__social social">
