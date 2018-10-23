@@ -1,15 +1,42 @@
 .modal {
-  display: none;
-  box-sizing: border-box;
-  width: 320px;
-  border: 1px solid rgba(0, 1, 1, 0.25);
-  box-shadow: 0 3px 12px rgba(0, 1, 1, 0.25);
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 50px;
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+
+.modal::before {
+  content: "";
+  position: absolute;
+  width: 100vw;
+  height: 100%;
+  background-color: $bgr-color;
+  opacity: 0.9;
+  z-index: 100;
 }
 
 .modal__container {
+  display: block;
+  box-sizing: border-box;
+  width: 320px;
+  background-color: $bgr-color;
+  border: 1px solid rgba(0, 1, 1, 0.25);
+  box-shadow: 0 3px 12px rgba(0, 1, 1, 0.25);
+  margin: 0 auto;
+  margin-bottom: 50px;
+  position: fixed;
+  top: 50%;
+  margin-top: -242px;
+  left: 50%;
+  margin-left: -160px;
+  z-index: 200;
+  opacity: 1;
+}
+
+.modal__wrapper {
   @include container;
   display: flex;
   flex-direction: column;
@@ -54,20 +81,6 @@
   cursor: pointer;
 }
 
-// .modal__item {
-//   padding: 20px 34px;
-//   border: 2px solid rgba(68, 68, 68, 0.1);
-//
-//   &:hover {
-//     border-color: rgba(68, 68, 68, 0.3);
-//   }
-//
-//   &:active,
-//   &:focus {
-//     border-color: $accent-light;
-//   }
-// }
-
 .modal__input-radio + label::before {
   content: "";
   position: absolute;
@@ -101,6 +114,7 @@
   border-color: $accent-light;
   color: $bgr-color;
   margin-bottom: 46px;
+  width: 100%;
 
   &:hover {
     background-color: $accent-dark;
@@ -109,11 +123,12 @@
 }
 
 @media (min-width: $tablet) {
-  .modal {
+  .modal__container {
     width: 566px;
+    margin-left: -283px;
   }
 
-  .modal__container {
+  .modal__wrapper {
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -133,8 +148,8 @@
   }
 
   .modal__list {
-      align-self: center;
-      width: 100%
+    align-self: center;
+    width: 100%;
   }
 
   .modal__item {
@@ -152,6 +167,5 @@
 
   .modal__input-radio:checked + label::after {
     width: 110px;
-
   }
 }
