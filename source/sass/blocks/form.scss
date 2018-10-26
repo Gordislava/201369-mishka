@@ -158,7 +158,9 @@
 }
 
 .form__input-radio:hover + label::before,
-.form__input-checkbox:hover + label::before {
+.form__input-checkbox:hover + label::before,
+.form__input-radio:focus + label::before,
+.form__input-checkbox:focus + label::before, {
   border: 2px solid $form-accent;
 }
 
@@ -174,8 +176,8 @@
   height: 16px;
   background-color: $form-accent;
   border-radius: 50%;
-  left: 14px;
-  top: 15px;
+  left: 12px;
+  top: 17px;
 }
 
 .form__input-checkbox + label::before {

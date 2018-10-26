@@ -32,6 +32,8 @@
 @media (min-width: $desktop) {
   .page-header__container {
     @include container--desktop;
+    max-width: 1150px;
+    box-sizing: border-box;
   }
 
   .page-header__logo {

@@ -41,7 +41,7 @@
   margin-bottom: 26px;
 }
 
-.review__autor {
+.reviews__autor {
   @include bold-text;
   font-size: 17px;
   line-height: 24px;
@@ -49,7 +49,7 @@
   font-style: italic;
 }
 
-.review__contacts {
+.reviews__contacts {
   @include basic-text;
   font-size: 17px;
   line-height: 30px;
@@ -155,7 +155,7 @@
     max-width: 720px;
   }
 
-  .review__autor {
+  .reviews__autor {
     font-size: 18px;
     line-height: 24px;
   }
@@ -165,7 +165,7 @@
     margin-bottom: 53px;
   }
 
-  .review__contacts {
+  .reviews__contacts {
     margin-top: 5px;
     padding-bottom: 38px;
   }
@@ -224,7 +224,7 @@
     min-width: 180px;
   }
 
-  .review__contacts {
+  .reviews__contacts {
     padding-bottom: 169px;
   }
 
