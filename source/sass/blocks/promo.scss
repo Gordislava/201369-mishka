@@ -5,15 +5,21 @@
 .promo__container {
   width: auto;
   max-width: 767px;
+  margin: 0 auto;
+}
+
+.promo__wrapper-content {
+  width: auto;
+  max-width: 767px;
   padding-left: 30px;
   padding-right: 30px;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   position: relative;
+  box-sizing: border-box;
 }
 
-.promo__container::after {
+.promo__wrapper-content::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -111,10 +117,16 @@
 
   .promo__container {
     max-width: 1150px;
-    padding-left: 52px;
-    padding-right: 53px;
+    padding-left: 0;
+    padding-right: 0;
     margin: 0 auto;
+  }
+
+  .promo__wrapper-content {
     padding-bottom: 53px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
   }
 
   .promo__title {
@@ -151,7 +163,7 @@
 
   .promo__img {
     position: absolute;
-    right: 53px;
+    right: 50px;
     top: 104px;
   }
 
@@ -165,7 +177,7 @@
     width: 290px;
   }
 
-  .promo__container::after {
+  .promo__wrapper-content::after {
     background-size: 768px 17px;
     bottom: -16px;
   }
@@ -175,6 +187,16 @@
   .promo__container {
     @include container--desktop;
     padding-bottom: 73px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .promo__wrapper-content {
+    max-width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-sizing: border-box;
+    margin: 0 auto;
   }
 
   .promo__title-group {
@@ -191,6 +213,7 @@
 
   .promo__img {
     top: 0;
+    right: 4.5%;
     z-index: -1;
   }
 
@@ -221,9 +244,11 @@
     width: 100%;
   }
 
-  .promo__container::after {
+  .promo__wrapper-content::after {
     background-size: 1050px 21px;
     background-position: center;
     bottom: 16px;
+    left: 4.5%;
+    width: 1050px;
   }
 }

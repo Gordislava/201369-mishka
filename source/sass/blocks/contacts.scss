@@ -50,7 +50,7 @@
   }
 }
 
-.contacts__value--dir {
+.contacts__dir {
   padding: 0;
   margin: 0;
 }
@@ -60,16 +60,21 @@
   margin-bottom: 35px;
   display: flex;
   justify-content: center;
+  position: relative;
+}
+
+.contacts__map-img {
+  width: 100%;
 }
 
 .contacts__button {
   display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: $text-color;
+  text-align: center;
   width: 81%;
   margin: 0 auto;
-}
-
-.contacts__map-picture {
-  position: relative;
 }
 
 .contacts__map-frame {

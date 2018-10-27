@@ -25,7 +25,7 @@
   color: $text-dark;
   padding-top: 52px;
   padding-bottom: 30px;
-  width: 89%;
+  box-sizing: border-box;
 }
 
 .about__item--ecology {
@@ -33,6 +33,7 @@
   background-repeat: no-repeat;
   background-size: 48px 38px;
   background-position: left top;
+  padding-right: 77px;
 }
 
 .about__item--scandinavian {
@@ -42,6 +43,7 @@
   background-position: left top;
   padding-bottom: 34px;
   padding-top: 54px;
+  padding-right: 51px;
 }
 
 .about__item--like {
@@ -49,6 +51,7 @@
   background-repeat: no-repeat;
   background-size: 47px 27px;
   background-position: left top;
+  padding-right: 77px;
 }
 
 .about__item--handmade {
@@ -56,6 +59,7 @@
   background-repeat: no-repeat;
   background-size: 35px 34px;
   background-position: left top;
+  padding-right: 63px;
 }
 
 .about__item--manufacturer {
@@ -70,6 +74,7 @@
   background-repeat: no-repeat;
   background-size: 39px 32px;
   background-position: left top;
+  padding-right: 77px;
 }
 
 @media (min-width: $tablet) {
@@ -100,15 +105,22 @@
     padding-bottom: 58px;
   }
 
+  .about__item--eco {
+    padding-right: 110px;
+  }
+
   .about__item--scandinavian {
+    padding-right: 78px;
     order: 3;
   }
 
   .about__item--like {
+    padding-right: 105px;
     order: 5;
   }
 
   .about__item--handmade {
+    padding-right: 31px;
     order: 2;
   }
 
@@ -117,6 +129,7 @@
   }
 
   .about__item--gift {
+    padding-right: 44px;
     order: 6;
   }
 }
@@ -139,5 +152,25 @@
     padding-left: 175px;
     width: 65%;
     margin-bottom: 32px;
+  }
+
+  .about__item--eco {
+    padding-right: 119px;
+  }
+
+  .about__item--scandinavian {
+    padding-right: 88px;
+  }
+
+  .about__item--like {
+    padding-right: 115px;
+  }
+
+  .about__item--handmade {
+    padding-right: 41px;
+  }
+
+  .about__item--gift {
+    padding-right: 54px;
   }
 }
