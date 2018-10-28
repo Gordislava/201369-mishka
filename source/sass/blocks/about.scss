@@ -59,7 +59,7 @@
   background-repeat: no-repeat;
   background-size: 35px 34px;
   background-position: left top;
-  padding-right: 63px;
+  padding-right: 50px;
 }
 
 .about__item--manufacturer {
@@ -74,7 +74,7 @@
   background-repeat: no-repeat;
   background-size: 39px 32px;
   background-position: left top;
-  padding-right: 77px;
+  padding-right: 62px;
 }
 
 @media (min-width: $tablet) {
@@ -105,8 +105,8 @@
     padding-bottom: 58px;
   }
 
-  .about__item--eco {
-    padding-right: 110px;
+  .about__item--ecology {
+    padding-right: 93px;
   }
 
   .about__item--scandinavian {
@@ -136,9 +136,14 @@
 
 @media (min-width: $desktop) {
   .about__container {
-    @include container--desktop;
+    width: auto;
+    max-width: 1150px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0 auto;
     margin-top: 0;
     padding-top: 0;
+    box-sizing: border-box;
   }
 
   .about__title {
@@ -154,8 +159,8 @@
     margin-bottom: 32px;
   }
 
-  .about__item--eco {
-    padding-right: 119px;
+  .about__item--ecology {
+    padding-right: 103px;
   }
 
   .about__item--scandinavian {

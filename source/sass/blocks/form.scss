@@ -132,6 +132,8 @@
 
 .form__note {
   @include basic-text;
+  font-size: 14px;
+  line-height: 16px;
   padding: 0;
   margin-bottom: 30px;
   margin-top: 10px;
@@ -177,7 +179,7 @@
   background-color: $form-accent;
   border-radius: 50%;
   left: 12px;
-  top: 17px;
+  top: 20px;
 }
 
 .form__input-checkbox + label::before {
@@ -220,16 +222,16 @@ fieldset.form__field {
   padding-top: 7px;
 }
 
-.form__field--phone,
-.form__field--email {
+.form__wrapper--phone,
+.form__wrapper--email {
   position: relative;
 }
 
 .form__name-phone,
 .form__name-mail {
   position: absolute;
-  bottom: 30px;
-  right: 0;
+  bottom: 16px;
+  right: 8px;
   opacity: 0.2;
 }
 
@@ -310,7 +312,7 @@ fieldset.form__field {
     width: 75%;
     display: flex;
     flex-direction: column;
-    margin-bottom: 28px;
+    margin-bottom: 31px;
   }
 
   .form__checkbox-list {
@@ -359,13 +361,22 @@ fieldset.form__field {
     margin-left: 0;
   }
 
+  .form__name-input--phone {
+    padding-bottom: 20px;
+  }
+
   .form__wrapper .form__title,
   .form__wrapper .form__email {
     margin-bottom: 0;
   }
 
+  .form__wrapper--email {
+    margin-top: 25px;
+  }
+
   .form__name-input--email {
-    margin-bottom: 44px;
+    margin-bottom: 47px;
+    padding-bottom: 20px;
   }
 
   .form__comment {
@@ -401,7 +412,7 @@ fieldset.form__field {
     width: 22px;
     height: 22px;
     left: 17px;
-    top: 17px;
+    top: 20px;
   }
 
   .form__input-checkbox + label::before {
@@ -426,24 +437,25 @@ fieldset.form__field {
   .form__name-phone,
   .form__name-mail {
     left: 87%;
-    top: 57px;
+    top: 12px;
   }
 
   .form__name-mail {
-    top: 47px;
+    top: 5px;
   }
 }
 
 @media (min-width: $desktop) {
   .main-form__container {
     width: auto;
-    max-width: 1440px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
   .main-form__descr {
-    margin-left: 175px;
     width: 60%;
+    max-width: 700px;
+    margin: 0 auto;
     margin-bottom: 10px;
   }
 
@@ -465,6 +477,9 @@ fieldset.form__field {
 
   .form__wrapper {
     padding: 0 227px 0 110px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    margin-top: 46px;
   }
 
   .form__wrapper-input {
@@ -483,6 +498,14 @@ fieldset.form__field {
     padding-right: 120px;
   }
 
+  .form__item--fathername {
+    margin-bottom: 25px;
+  }
+
+  .form__wrapper--email {
+    margin-top: 23px;
+  }
+
   .form__title--email {
     margin-right: 58px;
   }
@@ -493,17 +516,19 @@ fieldset.form__field {
   }
 
   .form__comment {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .form__wrapper--button {
     width: 60.5%;
+    max-width: 700px;
     margin: 0 auto;
     padding: 0;
   }
 
   .form__button {
     width: 33%;
+    margin-top: 17px;
   }
 
   .form__name-phone,

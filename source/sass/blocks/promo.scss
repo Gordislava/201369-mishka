@@ -52,7 +52,7 @@
 .promo__list {
   @include basic-text;
   line-height: 22px;
-  width: 95%;
+  width: 96%;
 }
 
 .promo__descr {
@@ -135,7 +135,7 @@
 
   .promo__wrapper {
     order: 0;
-    width: 43%;
+    width: 44%;
   }
 
   .promo__price {
@@ -186,7 +186,7 @@
 @media (min-width: $desktop) {
   .promo__container {
     @include container--desktop;
-    padding-bottom: 73px;
+    padding-bottom: 22px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -247,7 +247,7 @@
   .promo__wrapper-content::after {
     background-size: 1050px 21px;
     background-position: center;
-    bottom: 16px;
+    bottom: -5px;
     left: 4.5%;
     width: 1050px;
   }
