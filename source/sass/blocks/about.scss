@@ -15,7 +15,7 @@
 
 .about__list {
   @include list-norm;
-  margin-bottom: 24px;
+  margin-bottom: 27px;
 }
 
 .about__item {
@@ -42,7 +42,7 @@
   background-size: 47px 27px;
   background-position: left top;
   padding-bottom: 34px;
-  padding-top: 54px;
+  padding-top: 52px;
   padding-right: 51px;
 }
 
@@ -52,6 +52,7 @@
   background-size: 47px 27px;
   background-position: left top;
   padding-right: 77px;
+  padding-top: 47px;
 }
 
 .about__item--handmade {
@@ -117,6 +118,7 @@
   .about__item--like {
     padding-right: 105px;
     order: 5;
+    padding-top: 53px;
   }
 
   .about__item--handmade {

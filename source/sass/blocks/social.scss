@@ -21,11 +21,16 @@
     padding: 0;
     width: 43%;
     margin: 0 auto;
+    padding-top: 11px;
   }
 }
 
 @media (min-width: $desktop) {
   .social__list {
     width: 20%;
+  }
+
+  .social__list--form {
+    padding-top: 2px;
   }
 }

@@ -156,7 +156,7 @@
   border: 2px solid $text-color;
   border-radius: 50%;
   left: 0;
-  top: 4px;
+  top: -1px;
 }
 
 .form__input-radio:hover + label::before,
@@ -412,12 +412,13 @@ fieldset.form__field {
     width: 22px;
     height: 22px;
     left: 17px;
-    top: 20px;
+    top: 16px;
   }
 
   .form__input-checkbox + label::before {
     width: 54px;
     height: 52px;
+    left: -2px;
   }
 
   .form__input-checkbox:checked + label::after {
@@ -472,7 +473,7 @@ fieldset.form__field {
 
   .form__checkbox-item--orange,
   .form__checkbox-item--tiffany {
-    width: 34%;
+    width: 34.5%;
   }
 
   .form__wrapper {
@@ -498,8 +499,22 @@ fieldset.form__field {
     padding-right: 120px;
   }
 
+  .form__name-input {
+    padding-left: 15px;
+    box-sizing: border-box;
+    margin-left: 19px;
+  }
+
+  .form__name-input--surname {
+    padding-bottom: 12px;
+  }
+
+  .form__name-input--fathername {
+    padding-bottom: 12px;
+  }
+
   .form__item--fathername {
-    margin-bottom: 25px;
+    margin-bottom: 33px;
   }
 
   .form__wrapper--email {
@@ -510,13 +525,21 @@ fieldset.form__field {
     margin-right: 58px;
   }
 
-  .form__title--comment,
+  .form__name-input--phone,
+  .form__name-input--email {
+    margin-left: 0;
+  }
+
   .form__title--phone {
     margin-right: 81px;
   }
 
+  .form__title--comment {
+    margin-right: 77px;
+  }
+
   .form__comment {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
   }
 
   .form__wrapper--button {
