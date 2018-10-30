@@ -3,6 +3,7 @@
   font-size: 19px;
   color: $text-dark;
   padding-right: 30px;
+  padding-top: 5px;
 }
 
 .copyright__link {
@@ -27,11 +28,12 @@
 
 @media (min-width: $tablet) {
   .copyright__text {
-    padding-right: 32px;
+    padding-right: 30px;
   }
 
   .copyright__link {
     font-size: 10px;
+    padding-left: 13px;
   }
 }
 
@@ -39,5 +41,17 @@
   .copyright__link--form,
   .copyright__link--index {
     padding-top: 15px;
+  }
+
+  .copyright__text {
+    padding-right: 25px;
+  }
+
+  .copyright__text--catalog {
+    padding-top: 0;
+  }
+
+  .copyright__link {
+    padding-left: 3px;
   }
 }

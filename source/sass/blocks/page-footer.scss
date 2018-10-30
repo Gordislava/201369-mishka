@@ -17,7 +17,7 @@
 
 .page-footer__copyright {
   width: 100%;
-  padding-top: 24px;
+  padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
   display: flex;
@@ -76,7 +76,11 @@
     width: 26%;
     margin: 0;
     margin-left: auto;
-    padding-top: 10px;
+    padding-top: 5px;
+  }
+
+  .page-footer__copyright--form {
+    padding-top: 0;
   }
 
   .page-footer__social {
@@ -98,7 +102,7 @@
 
   .page-footer__wrapper {
     justify-content: space-between;
-    margin-top: 105px;
+    margin-top: 110px;
   }
 
   .page-footer__wrapper--form {
@@ -111,7 +115,15 @@
     margin: 0;
   }
 
+  .page-footer__copyright--catalog {
+    padding-top: 0;
+  }
+
   .page-footer__social {
     margin-left: 72px;
+  }
+
+  .page-footer__logo {
+    padding-top: 46px;
   }
 }

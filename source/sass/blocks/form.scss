@@ -178,8 +178,8 @@
   height: 16px;
   background-color: $form-accent;
   border-radius: 50%;
-  left: 12px;
-  top: 20px;
+  left: 13px;
+  top: 13px;
 }
 
 .form__input-checkbox + label::before {
@@ -355,6 +355,18 @@ fieldset.form__field {
     flex-grow: 1;
   }
 
+  .form__name-input::placeholder {
+    padding-left: 12px;
+  }
+
+  .form__name-input--fathername {
+    padding-bottom: 15px;
+  }
+
+  .form__title--phone {
+    padding-top: 19px;
+  }
+
   .form__name-input--phone,
   .form__name-input--email {
     background-color: $bgr-dark;
@@ -375,8 +387,8 @@ fieldset.form__field {
   }
 
   .form__name-input--email {
-    margin-bottom: 47px;
-    padding-bottom: 20px;
+    margin-bottom: 51px;
+    padding-bottom: 14px;
   }
 
   .form__comment {
@@ -514,7 +526,7 @@ fieldset.form__field {
   }
 
   .form__item--fathername {
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
 
   .form__wrapper--email {

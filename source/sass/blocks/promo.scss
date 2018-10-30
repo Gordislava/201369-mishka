@@ -36,7 +36,7 @@
 .promo__title {
   @include small-title;
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .promo__popular {
@@ -52,7 +52,7 @@
 .promo__list {
   @include basic-text;
   line-height: 22px;
-  width: 96%;
+  width: 100%;
 }
 
 .promo__descr {
@@ -238,6 +238,10 @@
   .promo__price-wrapper {
     margin-top: 90px;
     width: 100%;
+  }
+
+  .promo__price {
+    margin-bottom: 35px;
   }
 
 
