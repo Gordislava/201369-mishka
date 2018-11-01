@@ -51,6 +51,12 @@
 
   .cart__icon {
     top: 5px;
-    left: -61px;
+    left: -52px;
+  }
+}
+
+@media (min-width: $desktop) {
+  .cart__icon {
+    left: -54px;
   }
 }

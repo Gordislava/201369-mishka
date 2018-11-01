@@ -58,9 +58,13 @@
   }
 
   .site-list__item {
-    padding-right: 44px;
+    padding-right: 37px;
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 36px;
+  }
+
+  .site-list__item--form {
+    padding-top: 30px;
   }
 
   .site-list__item:first-child {

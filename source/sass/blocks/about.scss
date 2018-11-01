@@ -9,13 +9,13 @@
 .about__title {
   @include small-title;
   margin: 0;
-  padding-top: 36px;
+  padding-top: 34px;
   padding-bottom: 32px;
 }
 
 .about__list {
   @include list-norm;
-  margin-bottom: 27px;
+  margin-bottom: 24px;
 }
 
 .about__item {
@@ -42,7 +42,7 @@
   background-size: 47px 27px;
   background-position: left top;
   padding-bottom: 34px;
-  padding-top: 52px;
+  padding-top: 54px;
   padding-right: 51px;
 }
 
@@ -91,6 +91,7 @@
   .about__title {
     @include tablet-title;
     padding-bottom: 48px;
+    margin-left: -6px;
   }
 
   .about__list {
@@ -104,11 +105,12 @@
     font-size: 20px;
     line-height: 22px;
     width: 49%;
-    padding-bottom: 58px;
+    padding-bottom: 57px;
   }
 
   .about__item--ecology {
     padding-right: 93px;
+    padding-top: 55px;
   }
 
   .about__item--scandinavian {
@@ -120,20 +122,27 @@
     padding-right: 105px;
     order: 5;
     padding-top: 53px;
+    background-size: 47px 29px;
+    background-position: 0 3px;
   }
 
   .about__item--handmade {
     padding-right: 31px;
     order: 2;
+    margin-right: 6px;
+    padding-top: 55px;
   }
 
   .about__item--manufacturer {
     order: 4;
+    margin-right: 6px;
+    background-position: -7px 3px;
   }
 
   .about__item--gift {
     padding-right: 44px;
     order: 6;
+    margin-right: 6px;
   }
 }
 
@@ -152,8 +161,10 @@
   .about__title {
     font-size: 53px;
     line-height: 57px;
-    padding-left: 175px;
-    padding-top: 17px;
+    padding-left: 171px;
+    padding-top: 13px;
+    padding-bottom: 50px;
+    margin-left: 0;
   }
 
   .about__list {
@@ -164,6 +175,7 @@
 
   .about__item--ecology {
     padding-right: 103px;
+    padding-top: 53px;
   }
 
   .about__item--scandinavian {
@@ -172,13 +184,24 @@
 
   .about__item--like {
     padding-right: 115px;
+    background-size: 47px 28px;
+    background-position: 1px 6px;
   }
 
   .about__item--handmade {
     padding-right: 41px;
+    margin-right: -2px;
+    padding-top: 53px;
+  }
+
+  .about__item--manufacturer {
+    margin-right: -2px;
+    padding-top: 54px;
   }
 
   .about__item--gift {
     padding-right: 54px;
+    padding-top: 54px;
+    margin-right: -2px;
   }
 }

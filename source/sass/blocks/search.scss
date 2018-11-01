@@ -34,11 +34,6 @@
   opacity: 1;
 }
 
-// .search:active .search__icon, как сделать опасити при фокусе
-// .search__input:focus .search__icon {
-//   opacity: 0.3;
-// }
-
 @media (min-width: $tablet) {
   .search {
     width: 82px;
@@ -64,7 +59,7 @@
 
 @media (min-width: $desktop) {
   .search__icon {
-    left: 25px;
+    left: 30px;
   }
 
   .search {

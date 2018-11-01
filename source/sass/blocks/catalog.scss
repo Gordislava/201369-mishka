@@ -108,7 +108,7 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/hero-tablet@2x.jpg");
     }
-    margin-bottom: 37px;
+    margin-bottom: 35px;
   }
 
   .catalog__wrapper {
@@ -209,5 +209,11 @@
 
   .catalog__link {
     padding-right: 321px;
+    padding-top: 25px;
+    padding-bottom: 37px;
+  }
+
+  .catalog__icon--interior {
+    top: 30px;
   }
 }

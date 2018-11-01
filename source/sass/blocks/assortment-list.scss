@@ -17,12 +17,16 @@
     display: flex;
     width: 42%;
     order: 4;
-    margin-top: 20px;
+    margin-top: 16px;
     position: relative;
     z-index: 10;
   }
 
   .assortment-list__item {
     margin-right: 60px;
+  }
+
+  .assortment-list__link {
+    padding-bottom: 33px;
   }
 }

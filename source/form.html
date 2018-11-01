@@ -58,15 +58,18 @@
           <div class="user-nav">
             <ul class="user-nav__list">
               <li class="user-nav__item search">
+                <svg class="search__icon" width="18" height="18"><use xlink:href="#icon-search"></use></svg>
                 <input class="search__input" type="search" placeholder="Поиск по сайту">
               </li>
               <li class="user-nav__item cart">
-                <a class="cart__link" href="#">Корзина: пока пуста</a>
+                <a class="cart__link" href="#">
+                  <svg class="cart__icon" width="21" height="18"><use xlink:href="#icon-cart"></use></svg>
+                  Корзина: пока пуста</a>
               </li>
             </ul>
           </div>
           <ul class="site-list">
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--form">
               <a class="site-list__link" href="catalog.html">Каталог товаров</a>
             </li>
             <li class="site-list__item">
@@ -85,9 +88,9 @@
       </div>
     </nav>
   </header>
-    <main class="page-main main-container">
+    <main class="page-main page-main--form main-container">
       <div class="page-main__header page-main__header--form">
-        <h1 class="page-main__main-title">Вязание на заказ</h1>
+        <h1 class="page-main__main-title page-main__main-title--form">Вязание на заказ</h1>
       </div>
       <section class="main-form main-form__container">
           <p class="main-form__descr">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
@@ -120,7 +123,7 @@
                 </li>
                 <li class="form__item form__checkbox-item form__checkbox-item--tiffany">
                   <input class="visually-hidden form__input-checkbox" type="checkbox" name="tiffany" id="tiffany" checked>
-                  <label for="tiffany">"Тиффани"</label>
+                  <label for="tiffany">&laquo;Тиффани&raquo;</label>
                 </li>
                 <li class="form__item form__checkbox-item form__checkbox-item--black">
                   <input class="visually-hidden form__input-checkbox" type="checkbox" name="black" id="black">
@@ -145,7 +148,7 @@
                   <label for="name">Имя:</label>
                   <input required id="name" class="form__name-input must-fill" type="text" name="name" placeholder="Введите ваше имя*">
                 </p>
-                <p class="form__item form__item--name">
+                <p class="form__item form__item--name form__item--surname">
                   <label for="surname">Фамилия:</label>
                   <input required id="surname" class="form__name-input form__name-input--surname must-fill" type="text" name="name" placeholder="Укажите фамилию*">
                 </p>
@@ -173,7 +176,7 @@
             </div>
           </fieldset>
           <fieldset class="form__field form__field--comment">
-            <div class="form__wrapper">
+            <div class="form__wrapper form__wrapper--comment">
               <h3 class="form__title form__title--comment"><label for="comment">Доп</label></h3>
               <textarea class="form__comment" id="comment" name="comment" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </div>
