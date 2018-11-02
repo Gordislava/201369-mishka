@@ -25,6 +25,8 @@
   background-position: 34px 35px;
   top: 0;
   left: 0;
+  font-size: 17px;
+  line-height: 24px;
 }
 
 .demo__text {
@@ -50,7 +52,7 @@
 .demo__picture::before {
   content: "";
   position: absolute;
-  z-index: 999;
+  z-index: 20;
   background-size: 100px 75px;
   background-image: url("../img/icon-play.svg");
   background-repeat: no-repeat;
@@ -103,6 +105,7 @@
     width: 88%;
     margin-left: 41px;
     margin-bottom: 46px;
+    cursor: pointer;
   }
 
   .demo__list {

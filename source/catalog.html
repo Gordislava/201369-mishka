@@ -244,18 +244,30 @@
         </div>
       </div>
     </footer>
-    <section class="modal">
+    <section class="modal visually-hidden">
       <div class="modal__container">
-        <h2 class="modal__title">Добавить в корзину</h2>
-        <p class="modal__descr">Выберите размер</p>
-        <ul class="modal__list">
-          <li class="modal__item">S</li>
-          <li class="modal__item">M</li>
-          <li class="modal__item">L</li>
-        </ul>
-        <button class="button modal__button" type="button">Добавить</button>
+        <div class="modal__wrapper">
+          <h2 class="modal__title">Добавить в корзину</h2>
+          <p class="modal__descr">Выберите размер</p>
+          <ul class="modal__list modal__radio-list">
+            <li class="modal__item modal__radio-item">
+              <input class="visually-hidden modal__input-radio" type="radio" name="size" value="S" id="S">
+              <label for="S">S</label>
+            </li>
+            <li class="modal__item modal__radio-item">
+              <input class="visually-hidden modal__input-radio" type="radio" name="size" value="M" id="M">
+              <label for="M">M</label>
+            </li>
+            <li class="modal__item modal__radio-item">
+              <input class="visually-hidden modal__input-radio" type="radio" name="size" value="L" id="L">
+              <label for="L">L</label>
+            </li>
+          </ul>
+          <button class="button modal__button" type="button">Добавить</button>
+        </div>
       </div>
     </section>
     <script src="js/picturefill.min.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

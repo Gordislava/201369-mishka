@@ -233,7 +233,9 @@
   }
 
   .contacts__button {
-    margin-left: 19.5%;
     width: 230px;
+    margin: 0 auto;
+    left: -235px;
+    position: relative;
   }
 }

@@ -124,6 +124,10 @@
   .product-item__price-group {
     margin-top: auto;
   }
+
+  .product-item__button {
+    cursor: pointer;
+  }
 }
 
 @media (min-width: $desktop) {

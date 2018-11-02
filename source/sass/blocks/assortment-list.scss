@@ -10,6 +10,14 @@
   color: $text-dark;
   padding-bottom: 32px;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $desktop) {
